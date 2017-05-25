@@ -20,11 +20,31 @@
  * THE SOFTWARE.
  */
 
-import UIKit
+import SpriteKit
 
-@UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-  var window: UIWindow?
-  
-  func applicationDidFinishLaunching(_: UIApplication) {}
+final class Hat: SKSpriteNode {
+  convenience init() {
+    self.init(imageNamed: AppIcon.current.textureName)
+    isUserInteractionEnabled = true
+  }
+
+  override func touchesBegan(_ set: Set<UITouch>, with _: UIEvent?) {
+    AppIcon.alternate{
+      [unowned self]
+      getIcon in
+      
+      guard let icon = try? getIcon()
+      else {return}
+      
+      DispatchQueue.main.async{
+        self.texture = SKTexture(imageNamed: icon.textureName)
+      }
+    }
+  }
+}
+
+private extension AppIcon {
+  var textureName: String {
+    return name ?? "Sombrero"
+  }
 }

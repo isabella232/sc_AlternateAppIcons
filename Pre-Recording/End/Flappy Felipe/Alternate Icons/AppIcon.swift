@@ -22,9 +22,52 @@
 
 import UIKit
 
-@UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-  var window: UIWindow?
+enum AppIcon {
+  case primary
+  case pinkSombrero
   
-  func applicationDidFinishLaunching(_: UIApplication) {}
+  static var current: AppIcon {
+    guard let alternateIconName = UIApplication.shared.alternateIconName
+    else {return primary}
+    
+    return [
+      pinkSombrero
+    ].first{$0.name == alternateIconName}!
+  }
+  
+  var name: String? {
+    switch self {
+    case .primary: return nil
+    case .pinkSombrero: return "Pink Sombrero"
+    }
+  }
+  
+//MARK: alternate
+  struct AlternationError: Error {
+    let description: String
+  }
+  
+  static func alternate(
+    processGetIcon: @escaping ( () throws -> AppIcon ) -> Void
+  ) {
+    //    let f = UIApplication.shared.supportsAlternateIcons
+    
+    let alternateIcon: AppIcon = {
+      switch current {
+      case primary: return pinkSombrero
+      default: return primary
+      }
+    }()
+      
+    UIApplication.shared.setAlternateIconName(alternateIcon.name){
+      error in
+      
+      if let error = error {
+        processGetIcon{throw AlternationError(description: error.localizedDescription)}
+      }
+      else {
+        processGetIcon{alternateIcon}
+      }
+    }
+  }
 }

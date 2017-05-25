@@ -31,7 +31,7 @@ class PlayerEntity: GKEntity {
   var movementAllowed = false
   var numberOfFrames = 3
 
-  let sombrero = SKSpriteNode(imageNamed: "Sombrero")
+  let sombrero = Hat()
 
   init (imageName: String) {
     super.init()

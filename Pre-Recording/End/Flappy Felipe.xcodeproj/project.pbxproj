@@ -43,6 +43,9 @@
 		0430DEC11E6C68890010C348 /* MainMenuState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0430DEC01E6C68890010C348 /* MainMenuState.swift */; };
 		0430DEC31E6C689B0010C348 /* TutorialState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0430DEC21E6C689B0010C348 /* TutorialState.swift */; };
 		0430DEC71E6CB7490010C348 /* AnimationComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0430DEC61E6CB7490010C348 /* AnimationComponent.swift */; };
+		496E6E3F1ED62D1700BFB799 /* Hat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496E6E3E1ED62D1700BFB799 /* Hat.swift */; };
+		49B8BFB31ED633B700C77502 /* AppIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8BFB21ED633B700C77502 /* AppIcon.swift */; };
+		49B8BFB51ED6671000C77502 /* Icon - Pink Sombrero.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B8BFB41ED6671000C77502 /* Icon - Pink Sombrero.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +87,9 @@
 		0430DEC01E6C68890010C348 /* MainMenuState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuState.swift; sourceTree = "<group>"; };
 		0430DEC21E6C689B0010C348 /* TutorialState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialState.swift; sourceTree = "<group>"; };
 		0430DEC61E6CB7490010C348 /* AnimationComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationComponent.swift; sourceTree = "<group>"; };
+		496E6E3E1ED62D1700BFB799 /* Hat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hat.swift; sourceTree = "<group>"; };
+		49B8BFB21ED633B700C77502 /* AppIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppIcon.swift; path = "Alternate Icons/AppIcon.swift"; sourceTree = "<group>"; };
+		49B8BFB41ED6671000C77502 /* Icon - Pink Sombrero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon - Pink Sombrero.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +122,7 @@
 		0430DE651E69F8920010C348 /* Flappy Felipe */ = {
 			isa = PBXGroup;
 			children = (
+				49B8BFB11ED6338F00C77502 /* Alternate Icons */,
 				0430DEB91E6B43A60010C348 /* GameStates */,
 				0430DEB01E6A712B0010C348 /* Components */,
 				0430DEAF1E6A711D0010C348 /* Entities */,
@@ -185,6 +192,7 @@
 		0430DEAF1E6A711D0010C348 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				496E6E3E1ED62D1700BFB799 /* Hat.swift */,
 				0430DEB11E6A71610010C348 /* PlayerEntity.swift */,
 				0430DEB71E6B00BB0010C348 /* ObstacleEntity.swift */,
 			);
@@ -211,6 +219,15 @@
 				0430DEC21E6C689B0010C348 /* TutorialState.swift */,
 			);
 			name = GameStates;
+			sourceTree = "<group>";
+		};
+		49B8BFB11ED6338F00C77502 /* Alternate Icons */ = {
+			isa = PBXGroup;
+			children = (
+				49B8BFB21ED633B700C77502 /* AppIcon.swift */,
+				49B8BFB41ED6671000C77502 /* Icon - Pink Sombrero.png */,
+			);
+			name = "Alternate Icons";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +262,7 @@
 				TargetAttributes = {
 					0430DE621E69F8920010C348 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4AQJ37X836;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -280,6 +298,7 @@
 				0430DEAD1E69FBD70010C348 /* pop.wav in Resources */,
 				0430DE991E69FBD70010C348 /* sprites.atlas in Resources */,
 				0430DEA91E69FBD70010C348 /* ding.wav in Resources */,
+				49B8BFB51ED6671000C77502 /* Icon - Pink Sombrero.png in Resources */,
 				0430DEAB1E69FBD70010C348 /* flapping.wav in Resources */,
 				0430DE771E69F8920010C348 /* LaunchScreen.storyboard in Resources */,
 				0430DEAA1E69FBD70010C348 /* falling.wav in Resources */,
@@ -298,6 +317,7 @@
 				0430DEA61E69FBD70010C348 /* SKTTimingFunctions.swift in Sources */,
 				0430DEA51E69FBD70010C348 /* SKTEffects.swift in Sources */,
 				0430DEC11E6C68890010C348 /* MainMenuState.swift in Sources */,
+				49B8BFB31ED633B700C77502 /* AppIcon.swift in Sources */,
 				0430DEA11E69FBD70010C348 /* SKAction+SpecialEffects.swift in Sources */,
 				0430DEC71E6CB7490010C348 /* AnimationComponent.swift in Sources */,
 				0430DE9E1E69FBD70010C348 /* CGVector+Extensions.swift in Sources */,
@@ -316,6 +336,7 @@
 				0430DEC31E6C689B0010C348 /* TutorialState.swift in Sources */,
 				0430DEA71E69FBD70010C348 /* Vector3.swift in Sources */,
 				0430DEB61E6A77350010C348 /* MovementComponent.swift in Sources */,
+				496E6E3F1ED62D1700BFB799 /* Hat.swift in Sources */,
 				0430DEBB1E6B43BA0010C348 /* PlayingState.swift in Sources */,
 				0430DE671E69F8920010C348 /* AppDelegate.swift in Sources */,
 			);
@@ -438,11 +459,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4AQJ37X836;
 				INFOPLIST_FILE = "Flappy Felipe/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.razeware.Flappy-Felipe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -450,11 +474,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4AQJ37X836;
 				INFOPLIST_FILE = "Flappy Felipe/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.razeware.Flappy-Felipe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

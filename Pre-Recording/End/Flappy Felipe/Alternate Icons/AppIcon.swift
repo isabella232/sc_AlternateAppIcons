@@ -27,12 +27,39 @@ enum AppIcon {
   case pinkSombrero
   
   static var current: AppIcon {
-    guard let alternateIconName = UIApplication.shared.alternateIconName
-    else {return primary}
-    
     return [
+      primary,
       pinkSombrero
-    ].first{$0.name == alternateIconName}!
+    ].first{$0.name == UIApplication.shared.alternateIconName}!
+  }
+  
+  static func alternate(
+    processGetIcon: @escaping ( () throws -> AppIcon ) -> Void
+  ) {
+    //    let f = UIApplication.shared.supportsAlternateIcons
+    
+    var todaysAlternate: AppIcon? {
+      switch Date() {
+      default: return pinkSombrero
+      }
+    }
+    
+    guard let icon =
+      current == primary
+      ? todaysAlternate
+      : primary
+    else {return}
+    
+    UIApplication.shared.setAlternateIconName(icon.name){
+      error in
+      
+      if let error = error {
+        processGetIcon{throw error}
+      }
+      else {
+        processGetIcon{icon}
+      }
+    }
   }
   
   var name: String? {
@@ -41,33 +68,14 @@ enum AppIcon {
     case .pinkSombrero: return "Pink Sombrero"
     }
   }
-  
-//MARK: alternate
-  struct AlternationError: Error {
-    let description: String
-  }
-  
-  static func alternate(
-    processGetIcon: @escaping ( () throws -> AppIcon ) -> Void
-  ) {
-    //    let f = UIApplication.shared.supportsAlternateIcons
-    
-    let alternateIcon: AppIcon = {
-      switch current {
-      case primary: return pinkSombrero
-      default: return primary
-      }
-    }()
-      
-    UIApplication.shared.setAlternateIconName(alternateIcon.name){
-      error in
-      
-      if let error = error {
-        processGetIcon{throw AlternationError(description: error.localizedDescription)}
-      }
-      else {
-        processGetIcon{alternateIcon}
-      }
-    }
-  }
 }
+
+
+
+
+
+
+
+
+
+

@@ -36,11 +36,14 @@ enum AppIcon {
   static func alternate(
     processGetIcon: @escaping ( () throws -> AppIcon ) -> Void
   ) {
-    //    let f = UIApplication.shared.supportsAlternateIcons
-    
     var todaysAlternate: AppIcon? {
-      switch Date() {
-      default: return pinkSombrero
+      let currentDateComponents = Calendar.current.dateComponents(
+        [.month, .day],
+        from: .init()
+      )
+      switch (currentDateComponents.month!, currentDateComponents.day!) {
+      case (5, 25): return pinkSombrero
+      default: return nil
       }
     }
     

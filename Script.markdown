@@ -1,3 +1,7 @@
+First screencast: use alternate() but 
+Second:
+
+
 AppIcon.swift
 Hat.swift
 
@@ -52,3 +56,5 @@ PlayerEntity only needs one change.
 ```swift
 let sombrero = Hat()
 ```
+
+Demo both errors getting triggered. The first on a day that has no alternates. The second when you spell something wrong.

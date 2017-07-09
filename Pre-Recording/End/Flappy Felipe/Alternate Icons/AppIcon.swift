@@ -26,6 +26,10 @@ enum AppIcon {
   case primary
   case pinkSombrero
   
+  enum AlternateError: Error {
+    case noAlternateToday
+  }
+  
   static var current: AppIcon {
     return [
       primary,
@@ -52,17 +56,20 @@ enum AppIcon {
       current == primary
       ? todaysAlternate
       : primary
-    else {return}
+    else {
+      processGetIcon{throw AlternateError.noAlternateToday}
+      return
+    }
     
     UIApplication.shared.setAlternateIconName(icon.name){
       error in
       
       if let error = error {
         processGetIcon{throw error}
+        return
       }
-      else {
-        processGetIcon{icon}
-      }
+      
+      processGetIcon{icon}
     }
   }
   

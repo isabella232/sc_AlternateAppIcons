@@ -33,12 +33,15 @@ final class Hat: SKSpriteNode {
       [unowned self]
       getIcon in
       
-      guard let icon = try? getIcon()
-      else {return}
-      
-      DispatchQueue.main.async{
-        self.texture = SKTexture(imageNamed: icon.textureName)
+      do {
+        let icon = try getIcon()
+        
+        DispatchQueue.main.async{
+          self.texture = SKTexture(imageNamed: icon.textureName)
+        }
       }
+      catch AppIcon.AlternateError.noAlternateToday {}
+      catch {fatalError(error.localizedDescription)}
     }
   }
 }

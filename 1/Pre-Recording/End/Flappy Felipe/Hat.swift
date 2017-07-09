@@ -24,30 +24,11 @@ import SpriteKit
 
 final class Hat: SKSpriteNode {
   convenience init() {
-    self.init(imageNamed: AppIcon.current.textureName)
+    self.init(imageNamed: "Sombrero")
     isUserInteractionEnabled = true
   }
 
   override func touchesBegan(_: Set<UITouch>, with _: UIEvent?) {
-    AppIcon.alternate{
-      [unowned self]
-      getIcon in
-      
-      do {
-        let icon = try getIcon()
-        
-        DispatchQueue.main.async{
-          self.texture = SKTexture(imageNamed: icon.textureName)
-        }
-      }
-      catch AppIcon.AlternateError.noAlternateToday {}
-      catch {fatalError()}
-    }
-  }
-}
-
-private extension AppIcon {
-  var textureName: String {
-    return name ?? "Sombrero"
+    AppIcon.alternate()
   }
 }

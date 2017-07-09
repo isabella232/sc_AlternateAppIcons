@@ -5,7 +5,15 @@ Hey everybody! Catie and ***[point at Jessy]*** Jessy here with a screencast on 
 **Jessy**  
 Uncharacteristically with Apple, we don't have to wait for our users to adopt a *major* release in order to try it out: it's avaialble starting in iOS 10.3. Everything we'll be going over today assumes your app's deployment target is set specifically to that version; this API is unfortunately not working properly in the iOS 11 beta yet.
 
+**Catie**  
+thanks to [three]
+based on Flappy Felipe
+where to get it
+
+
 ## Demo
+what the only change is: Hat
+
 
 First screencast: use alternate() but 
 Second:
@@ -69,5 +77,9 @@ let sombrero = Hat()
 Demo both errors getting triggered. The first on a day that has no alternates. The second when you spell something wrong.
 
 
-**Catie**  
-thanks to [three]
+
+
+
+What are we actually doing?? Why is there a ❤️ and why doesn't it show up in-game? Doesn't make any sense to just change the icon. only a teaser. Let's get into a practical sample application of alternate icons in another screencast! 
+
+Stay tuned!

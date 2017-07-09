@@ -33,6 +33,7 @@ enum AppIcon {
     ].first{$0.name == UIApplication.shared.alternateIconName}!
   }
   
+  /// Alternate between the primary app icon and today's Easter egg
   static func alternate(
     processGetIcon: @escaping ( () throws -> AppIcon ) -> Void
   ) {

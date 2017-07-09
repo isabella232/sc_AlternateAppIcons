@@ -28,7 +28,7 @@ final class Hat: SKSpriteNode {
     isUserInteractionEnabled = true
   }
 
-  override func touchesBegan(_ set: Set<UITouch>, with _: UIEvent?) {
+  override func touchesBegan(_: Set<UITouch>, with _: UIEvent?) {
     AppIcon.alternate{
       [unowned self]
       getIcon in

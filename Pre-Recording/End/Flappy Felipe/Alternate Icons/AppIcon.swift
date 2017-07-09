@@ -43,11 +43,11 @@ enum AppIcon {
   ) {
     var todaysAlternate: AppIcon? {
       let currentDateComponents = Calendar.current.dateComponents(
-        [.month, .day],
+        [.day, .month],
         from: .init()
       )
-      switch (currentDateComponents.month!, currentDateComponents.day!) {
-      case (5, 25): return pinkSombrero
+      switch (currentDateComponents.day!, currentDateComponents.month!) {
+      case (8, 7): return pinkSombrero
       default: return nil
       }
     }

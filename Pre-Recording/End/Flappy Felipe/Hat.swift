@@ -41,7 +41,7 @@ final class Hat: SKSpriteNode {
         }
       }
       catch AppIcon.AlternateError.noAlternateToday {}
-      catch {fatalError(error.localizedDescription)}
+      catch {fatalError()}
     }
   }
 }

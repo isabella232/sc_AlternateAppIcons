@@ -24,59 +24,28 @@ import UIKit
 
 enum AppIcon {
   case primary
-  case pinkSombrero
-  
-  enum AlternateError: Error {
-    case noAlternateToday
-  }
+  case valentine
   
   static var current: AppIcon {
     return [
       primary,
-      pinkSombrero
+      valentine
     ].first{$0.name == UIApplication.shared.alternateIconName}!
   }
   
-  /// Alternate between the primary app icon and today's Easter egg
-  static func alternate(
-    processGetIcon: @escaping ( () throws -> AppIcon ) -> Void
-  ) {
-    var todaysAlternate: AppIcon? {
-      let currentDateComponents = Calendar.current.dateComponents(
-        [.day, .month],
-        from: .init()
-      )
-      switch (currentDateComponents.day!, currentDateComponents.month!) {
-      case (9, 7): return pinkSombrero
-      default: return nil
-      }
-    }
-    
-    guard let icon =
+  static func alternate() {
+    let icon =
       current == primary
-      ? todaysAlternate
+      ? valentine
       : primary
-    else {
-      processGetIcon{throw AlternateError.noAlternateToday}
-      return
-    }
     
-    UIApplication.shared.setAlternateIconName(icon.name){
-      error in
-      
-      if let error = error {
-        processGetIcon{throw error}
-        return
-      }
-      
-      processGetIcon{icon}
-    }
+    UIApplication.shared.setAlternateIconName(icon.name)
   }
   
   var name: String? {
     switch self {
     case .primary: return nil
-    case .pinkSombrero: return "Pink Sombrero"
+    case .valentine: return "Pink Sombrero"
     }
   }
 }

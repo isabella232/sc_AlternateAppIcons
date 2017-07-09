@@ -9,6 +9,57 @@ It's only literally Easter for one of these
 
 
 ### *`AppIcon.swift`*
+`alternate` is going to be slightly more complex. I'll document what that will entail: alternating between the primary app icon and today's Easter egg.
+
+```swift
+/// Alternate between the primary app icon and today's Easter egg
+static func alternate() {
+```
+
+```swift
+static func alternate() {
+	😺var todaysAlternate: AppIcon? {
+      let currentDateComponents = Calendar.current.dateComponents(
+        [.day, .month],
+        from: .init()
+      )
+      switch (currentDateComponents.day!, currentDateComponents.month!) {
+      case (9, 7): return pinkSombrero
+      default: return nil
+      }
+    }
+```
+
+
+More cases.
+
+```swift
+  case pinkSombrero
+  etc.
+```
+
+```swift
+  enum AlternateError: Error {
+    case noAlternateToday
+  }
+```
+
+```swift
+    guard let icon =
+      current == primary
+      ? todaysAlternate
+      : primary
+    else {
+      throw AlternateError.noAlternateToday
+      return
+    }
+```
+It's going to be asynchronous.
+
+```swift
+processGetIcon{throw AlternateError.noAlternateToday}
+```
+
 Write processGetIcon last. Mention that we'll write it then.
 
 

@@ -41,6 +41,18 @@ What does that mean?
 It's only literally Easter for one of these
 
 ***AppIcon.swift***
+Use this formatting because there are going to be a several more in the future.
+
+```swift
+  static var current: AppIcon {
+    return [
+      primary,
+      valentine????
+    ].first{$0.name == UIApplication.shared.alternateIconName}!
+  }
+```
+
+
 Write processGetIcon last. Mention that we'll write it then.
 
 
@@ -77,9 +89,13 @@ let sombrero = Hat()
 Demo both errors getting triggered. The first on a day that has no alternates. The second when you spell something wrong.
 
 
+`setAlternateIconName` takes a second parameter.
+Go over that next time.
 
 
 
 What are we actually doing?? Why is there a ❤️ and why doesn't it show up in-game? Doesn't make any sense to just change the icon. only a teaser. Let's get into a practical sample application of alternate icons in another screencast! 
+
+You may have been able to guess. Sneak peak.
 
 Stay tuned!

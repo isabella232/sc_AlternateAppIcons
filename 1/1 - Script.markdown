@@ -1,5 +1,11 @@
-The first thing is 10.3
-next, Start with https://developer.apple.com/documentation/uikit/uiapplication/2806815-supportsalternateicons
+## Introduction
+**Catie**  
+Hey everybody! Catie and ***[point at Jessy]*** Jessy here with a screencast on a new feature and API in iOS: alternate app icons!
+
+**Jessy**  
+Uncharacteristically with Apple, we don't have to wait for our users to adopt a *major* release in order to try it out: it's avaialble starting in iOS 10.3. Everything we'll be going over today assumes your app's deployment target is set specifically to that version; this API is unfortunately not working properly in the iOS 11 beta yet.
+
+## Demo
 
 First screencast: use alternate() but 
 Second:
@@ -61,3 +67,7 @@ let sombrero = Hat()
 ```
 
 Demo both errors getting triggered. The first on a day that has no alternates. The second when you spell something wrong.
+
+
+**Catie**  
+thanks to [three]

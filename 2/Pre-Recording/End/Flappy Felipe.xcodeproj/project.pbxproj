@@ -43,6 +43,27 @@
 		0430DEC11E6C68890010C348 /* MainMenuState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0430DEC01E6C68890010C348 /* MainMenuState.swift */; };
 		0430DEC31E6C689B0010C348 /* TutorialState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0430DEC21E6C689B0010C348 /* TutorialState.swift */; };
 		0430DEC71E6CB7490010C348 /* AnimationComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0430DEC61E6CB7490010C348 /* AnimationComponent.swift */; };
+		0A95DC861F12D9BF00FE1492 /* Icon-83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A95DC711F12D9BD00FE1492 /* Icon-83.5@2x.png */; };
+		0A95DC871F12D9BF00FE1492 /* ThanksgivingIcon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A95DC721F12D9BD00FE1492 /* ThanksgivingIcon-76@2x.png */; };
+		0A95DC881F12D9BF00FE1492 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A95DC731F12D9BD00FE1492 /* Icon-60@2x.png */; };
+		0A95DC891F12D9BF00FE1492 /* ValentineIcon-83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A95DC741F12D9BD00FE1492 /* ValentineIcon-83.5@2x.png */; };
+		0A95DC8A1F12D9BF00FE1492 /* ThanksgivingIcon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A95DC751F12D9BD00FE1492 /* ThanksgivingIcon-60@3x.png */; };
+		0A95DC8B1F12D9BF00FE1492 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A95DC761F12D9BD00FE1492 /* Icon.png */; };
+		0A95DC8C1F12D9BF00FE1492 /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A95DC771F12D9BD00FE1492 /* Icon-76@2x.png */; };
+		0A95DC8D1F12D9BF00FE1492 /* ChristmasIcon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A95DC781F12D9BD00FE1492 /* ChristmasIcon-76@2x.png */; };
+		0A95DC8E1F12D9BF00FE1492 /* ValentineIcon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A95DC791F12D9BD00FE1492 /* ValentineIcon-76.png */; };
+		0A95DC8F1F12D9BF00FE1492 /* ValentineIcon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A95DC7A1F12D9BE00FE1492 /* ValentineIcon-60@2x.png */; };
+		0A95DC901F12D9BF00FE1492 /* ChristmasIcon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A95DC7B1F12D9BE00FE1492 /* ChristmasIcon-60@3x.png */; };
+		0A95DC911F12D9BF00FE1492 /* ChristmasIcon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A95DC7C1F12D9BE00FE1492 /* ChristmasIcon-60@2x.png */; };
+		0A95DC921F12D9BF00FE1492 /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A95DC7D1F12D9BE00FE1492 /* Icon-76.png */; };
+		0A95DC931F12D9BF00FE1492 /* ValentineIcon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A95DC7E1F12D9BE00FE1492 /* ValentineIcon-76@2x.png */; };
+		0A95DC941F12D9BF00FE1492 /* ThanksgivingIcon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A95DC7F1F12D9BE00FE1492 /* ThanksgivingIcon-76.png */; };
+		0A95DC951F12D9BF00FE1492 /* ThanksgivingIcon-83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A95DC801F12D9BE00FE1492 /* ThanksgivingIcon-83.5@2x.png */; };
+		0A95DC961F12D9BF00FE1492 /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A95DC811F12D9BE00FE1492 /* Icon-60@3x.png */; };
+		0A95DC971F12D9BF00FE1492 /* ChristmasIcon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A95DC821F12D9BE00FE1492 /* ChristmasIcon-76.png */; };
+		0A95DC981F12D9BF00FE1492 /* ValentineIcon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A95DC831F12D9BE00FE1492 /* ValentineIcon-60@3x.png */; };
+		0A95DC991F12D9BF00FE1492 /* ThanksgivingIcon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A95DC841F12D9BE00FE1492 /* ThanksgivingIcon-60@2x.png */; };
+		0A95DC9A1F12D9BF00FE1492 /* ChristmasIcon-83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A95DC851F12D9BF00FE1492 /* ChristmasIcon-83.5@2x.png */; };
 		496E6E3F1ED62D1700BFB799 /* Hat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496E6E3E1ED62D1700BFB799 /* Hat.swift */; };
 		49B8BFB31ED633B700C77502 /* AppIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8BFB21ED633B700C77502 /* AppIcon.swift */; };
 		49B8BFB51ED6671000C77502 /* Icon - Pink Sombrero.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B8BFB41ED6671000C77502 /* Icon - Pink Sombrero.png */; };
@@ -87,6 +108,27 @@
 		0430DEC01E6C68890010C348 /* MainMenuState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuState.swift; sourceTree = "<group>"; };
 		0430DEC21E6C689B0010C348 /* TutorialState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialState.swift; sourceTree = "<group>"; };
 		0430DEC61E6CB7490010C348 /* AnimationComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationComponent.swift; sourceTree = "<group>"; };
+		0A95DC711F12D9BD00FE1492 /* Icon-83.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-83.5@2x.png"; sourceTree = "<group>"; };
+		0A95DC721F12D9BD00FE1492 /* ThanksgivingIcon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ThanksgivingIcon-76@2x.png"; sourceTree = "<group>"; };
+		0A95DC731F12D9BD00FE1492 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
+		0A95DC741F12D9BD00FE1492 /* ValentineIcon-83.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ValentineIcon-83.5@2x.png"; sourceTree = "<group>"; };
+		0A95DC751F12D9BD00FE1492 /* ThanksgivingIcon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ThanksgivingIcon-60@3x.png"; sourceTree = "<group>"; };
+		0A95DC761F12D9BD00FE1492 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		0A95DC771F12D9BD00FE1492 /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
+		0A95DC781F12D9BD00FE1492 /* ChristmasIcon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChristmasIcon-76@2x.png"; sourceTree = "<group>"; };
+		0A95DC791F12D9BD00FE1492 /* ValentineIcon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ValentineIcon-76.png"; sourceTree = "<group>"; };
+		0A95DC7A1F12D9BE00FE1492 /* ValentineIcon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ValentineIcon-60@2x.png"; sourceTree = "<group>"; };
+		0A95DC7B1F12D9BE00FE1492 /* ChristmasIcon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChristmasIcon-60@3x.png"; sourceTree = "<group>"; };
+		0A95DC7C1F12D9BE00FE1492 /* ChristmasIcon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChristmasIcon-60@2x.png"; sourceTree = "<group>"; };
+		0A95DC7D1F12D9BE00FE1492 /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
+		0A95DC7E1F12D9BE00FE1492 /* ValentineIcon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ValentineIcon-76@2x.png"; sourceTree = "<group>"; };
+		0A95DC7F1F12D9BE00FE1492 /* ThanksgivingIcon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ThanksgivingIcon-76.png"; sourceTree = "<group>"; };
+		0A95DC801F12D9BE00FE1492 /* ThanksgivingIcon-83.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ThanksgivingIcon-83.5@2x.png"; sourceTree = "<group>"; };
+		0A95DC811F12D9BE00FE1492 /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
+		0A95DC821F12D9BE00FE1492 /* ChristmasIcon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChristmasIcon-76.png"; sourceTree = "<group>"; };
+		0A95DC831F12D9BE00FE1492 /* ValentineIcon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ValentineIcon-60@3x.png"; sourceTree = "<group>"; };
+		0A95DC841F12D9BE00FE1492 /* ThanksgivingIcon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ThanksgivingIcon-60@2x.png"; sourceTree = "<group>"; };
+		0A95DC851F12D9BF00FE1492 /* ChristmasIcon-83.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChristmasIcon-83.5@2x.png"; sourceTree = "<group>"; };
 		496E6E3E1ED62D1700BFB799 /* Hat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hat.swift; sourceTree = "<group>"; };
 		49B8BFB21ED633B700C77502 /* AppIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppIcon.swift; path = "Alternate Icons/AppIcon.swift"; sourceTree = "<group>"; };
 		49B8BFB41ED6671000C77502 /* Icon - Pink Sombrero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon - Pink Sombrero.png"; sourceTree = "<group>"; };
@@ -224,6 +266,27 @@
 		49B8BFB11ED6338F00C77502 /* Alternate Icons */ = {
 			isa = PBXGroup;
 			children = (
+				0A95DC7C1F12D9BE00FE1492 /* ChristmasIcon-60@2x.png */,
+				0A95DC7B1F12D9BE00FE1492 /* ChristmasIcon-60@3x.png */,
+				0A95DC821F12D9BE00FE1492 /* ChristmasIcon-76.png */,
+				0A95DC781F12D9BD00FE1492 /* ChristmasIcon-76@2x.png */,
+				0A95DC851F12D9BF00FE1492 /* ChristmasIcon-83.5@2x.png */,
+				0A95DC731F12D9BD00FE1492 /* Icon-60@2x.png */,
+				0A95DC811F12D9BE00FE1492 /* Icon-60@3x.png */,
+				0A95DC7D1F12D9BE00FE1492 /* Icon-76.png */,
+				0A95DC771F12D9BD00FE1492 /* Icon-76@2x.png */,
+				0A95DC711F12D9BD00FE1492 /* Icon-83.5@2x.png */,
+				0A95DC761F12D9BD00FE1492 /* Icon.png */,
+				0A95DC841F12D9BE00FE1492 /* ThanksgivingIcon-60@2x.png */,
+				0A95DC751F12D9BD00FE1492 /* ThanksgivingIcon-60@3x.png */,
+				0A95DC7F1F12D9BE00FE1492 /* ThanksgivingIcon-76.png */,
+				0A95DC721F12D9BD00FE1492 /* ThanksgivingIcon-76@2x.png */,
+				0A95DC801F12D9BE00FE1492 /* ThanksgivingIcon-83.5@2x.png */,
+				0A95DC7A1F12D9BE00FE1492 /* ValentineIcon-60@2x.png */,
+				0A95DC831F12D9BE00FE1492 /* ValentineIcon-60@3x.png */,
+				0A95DC791F12D9BD00FE1492 /* ValentineIcon-76.png */,
+				0A95DC7E1F12D9BE00FE1492 /* ValentineIcon-76@2x.png */,
+				0A95DC741F12D9BD00FE1492 /* ValentineIcon-83.5@2x.png */,
 				49B8BFB21ED633B700C77502 /* AppIcon.swift */,
 				49B8BFB41ED6671000C77502 /* Icon - Pink Sombrero.png */,
 			);
@@ -262,7 +325,6 @@
 				TargetAttributes = {
 					0430DE621E69F8920010C348 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 4AQJ37X836;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
@@ -291,17 +353,38 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A95DC991F12D9BF00FE1492 /* ThanksgivingIcon-60@2x.png in Resources */,
+				0A95DC8F1F12D9BF00FE1492 /* ValentineIcon-60@2x.png in Resources */,
+				0A95DC8B1F12D9BF00FE1492 /* Icon.png in Resources */,
+				0A95DC951F12D9BF00FE1492 /* ThanksgivingIcon-83.5@2x.png in Resources */,
+				0A95DC8A1F12D9BF00FE1492 /* ThanksgivingIcon-60@3x.png in Resources */,
+				0A95DC971F12D9BF00FE1492 /* ChristmasIcon-76.png in Resources */,
+				0A95DC961F12D9BF00FE1492 /* Icon-60@3x.png in Resources */,
+				0A95DC8C1F12D9BF00FE1492 /* Icon-76@2x.png in Resources */,
+				0A95DC891F12D9BF00FE1492 /* ValentineIcon-83.5@2x.png in Resources */,
 				0430DEAE1E69FBD70010C348 /* whack.wav in Resources */,
+				0A95DC911F12D9BF00FE1492 /* ChristmasIcon-60@2x.png in Resources */,
 				0430DEA81E69FBD70010C348 /* coin.wav in Resources */,
+				0A95DC941F12D9BF00FE1492 /* ThanksgivingIcon-76.png in Resources */,
 				0430DE721E69F8920010C348 /* Main.storyboard in Resources */,
 				0430DE741E69F8920010C348 /* Assets.xcassets in Resources */,
 				0430DEAC1E69FBD70010C348 /* hitGround.wav in Resources */,
+				0A95DC8E1F12D9BF00FE1492 /* ValentineIcon-76.png in Resources */,
 				0430DEAD1E69FBD70010C348 /* pop.wav in Resources */,
+				0A95DC901F12D9BF00FE1492 /* ChristmasIcon-60@3x.png in Resources */,
 				0430DE991E69FBD70010C348 /* sprites.atlas in Resources */,
+				0A95DC931F12D9BF00FE1492 /* ValentineIcon-76@2x.png in Resources */,
 				0430DEA91E69FBD70010C348 /* ding.wav in Resources */,
 				49B8BFB51ED6671000C77502 /* Icon - Pink Sombrero.png in Resources */,
+				0A95DC8D1F12D9BF00FE1492 /* ChristmasIcon-76@2x.png in Resources */,
 				0430DEAB1E69FBD70010C348 /* flapping.wav in Resources */,
 				0430DE771E69F8920010C348 /* LaunchScreen.storyboard in Resources */,
+				0A95DC881F12D9BF00FE1492 /* Icon-60@2x.png in Resources */,
+				0A95DC981F12D9BF00FE1492 /* ValentineIcon-60@3x.png in Resources */,
+				0A95DC871F12D9BF00FE1492 /* ThanksgivingIcon-76@2x.png in Resources */,
+				0A95DC921F12D9BF00FE1492 /* Icon-76.png in Resources */,
+				0A95DC9A1F12D9BF00FE1492 /* ChristmasIcon-83.5@2x.png in Resources */,
+				0A95DC861F12D9BF00FE1492 /* Icon-83.5@2x.png in Resources */,
 				0430DEAA1E69FBD70010C348 /* falling.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -472,7 +555,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4AQJ37X836;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Flappy Felipe/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -488,7 +571,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4AQJ37X836;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Flappy Felipe/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

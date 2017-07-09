@@ -24,7 +24,9 @@ import UIKit
 
 enum AppIcon {
   case primary
-  case pinkSombrero
+  case christmas
+  case thanksgiving
+  case valentine
   
   enum AlternateError: Error {
     case noAlternateToday
@@ -33,7 +35,9 @@ enum AppIcon {
   static var current: AppIcon {
     return [
       primary,
-      pinkSombrero
+      christmas,
+      thanksgiving,
+      valentine
     ].first{$0.name == UIApplication.shared.alternateIconName}!
   }
   
@@ -47,7 +51,7 @@ enum AppIcon {
         from: .init()
       )
       switch (currentDateComponents.day!, currentDateComponents.month!) {
-      case (9, 7): return pinkSombrero
+      case (9, 7): return thanksgiving
       default: return nil
       }
     }
@@ -76,7 +80,9 @@ enum AppIcon {
   var name: String? {
     switch self {
     case .primary: return nil
-    case .pinkSombrero: return "Pink Sombrero"
+    case .christmas: return "Christmas"
+    case .thanksgiving: return "Thanksgiving"
+    case .valentine: return "Valentine"
     }
   }
 }

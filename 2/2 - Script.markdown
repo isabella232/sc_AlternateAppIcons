@@ -5,9 +5,6 @@ What does that mean?
 It's only literally Easter for one of these
 
 ## Demo
-
-
-
 ### *`AppIcon.swift`*
 `alternate` is going to be slightly more complex. I'll document what that will entail: alternating between the primary app icon and today's Easter egg.
 

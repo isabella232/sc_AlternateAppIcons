@@ -1,3 +1,6 @@
+The first thing is 10.3
+next, Start with https://developer.apple.com/documentation/uikit/uiapplication/2806815-supportsalternateicons
+
 First screencast: use alternate() but 
 Second:
 

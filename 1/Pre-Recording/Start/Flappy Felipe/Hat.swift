@@ -20,11 +20,15 @@
  * THE SOFTWARE.
  */
 
-import UIKit
+import SpriteKit
 
-@UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-  var window: UIWindow?
-  
-  func applicationDidFinishLaunching(_: UIApplication) {}
+final class Hat: SKSpriteNode {
+  convenience init() {
+    self.init(imageNamed: "Sombrero")
+    isUserInteractionEnabled = true
+  }
+
+  override func touchesBegan(_: Set<UITouch>, with _: UIEvent?) {
+    
+  }
 }

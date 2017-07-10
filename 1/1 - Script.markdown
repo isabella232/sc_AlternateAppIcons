@@ -6,9 +6,9 @@ Hey everybody! ***[point at self]*** Catie and ***[point at Jessy]*** Jessy here
 Uncharacteristically with development for Apple platforms, we don't have to wait for our users to adopt a *major* release in order to try it out: it's available starting in iOS 10.3. Everything we'll be going over today assumes your app's deployment target is set specifically to that version. This API is unfortunately not working properly in the iOS 11 beta yet.
 
 **Catie**  
-thanks to [three]
-based on Flappy Felipe
-where to get it
+In this screencast we'll be adding alternate icons to a raywenderlich.com classic game: Flappy Felipe. Thanks very much to Tammy Coron, who last updated the course in which you can learn how to make this game. We'd also like to thank Mike Berg at weHeartGames.com who created all of the original artwork for the game. 
+
+And finally, thanks to Felipe Laso-Marsetti, the game's namesake. We asked Felipe what some of his favorite holidays are so we can add special icons to celebrate them in the game.
 
 ## Demo
 [do primary, valentine, and christmas to show at least two alternates.]

@@ -1,4 +1,21 @@
 # Before starting, make sure…
+…to delete the `AppIcon.alternate()` call (we don't want its error sticking around for most of this screencast)
+
+…*`Hat.swift`* has this at the bottom
+
+```swift
+private extension AppIcon {
+  var textureName: String {
+    if let name = name {
+      return name + " Hat"
+    }
+    else {
+      return "Sombrero"
+    }
+  }
+}
+```
+
 …*`AppIcon.swift`* has these:
 
 ```swift
@@ -104,6 +121,14 @@ I'll define the error case as `AlternateError.noHolidayToday`…
   
   static var current: AppIcon {
 ```
+…document that it's what alternate might throw
+```swift
+/// Alternate between the primary app icon and today's holiday icon
+/// - Throws: AppIcon.AlternateError.noHolidayToday
+```
+
+> option-click the name to show that worked
+
 … and throw it when the current app icon is the primary one, and today is not a holiday.
 
 ```swift
@@ -180,6 +205,7 @@ Then, it's easy enough to create a _closure_ that returns `icon`, by switching f
 ```
 
 and using that same syntax, throwing `setAlternateIconName`'s error, when it exists, and should be propagated. 
+
 ```swift
       if let error = error {
         😺processGetIcon{throw error}
@@ -187,69 +213,64 @@ and using that same syntax, throwing `setAlternateIconName`'s error, when it exi
       }
 ```
 
-Now we're ready to alternate icons! Let's continue to do that by tapping on Felipe's hat.
+Now we're ready to alternate icons! Let's continue from last, doing that by tapping on Felipe's hat.
 
 ### *`Hat.swift`*
 **Jessy**  
-In Hat.swift…
+In Hat.swift, I'll call `AppIcon.alternate` in `touchesBegan`. It's fine to ignore the synchronous error, where there's no holiday icon. The icon switching in this game is sort of a secret easter egg for players in-the-know, and they'll expect it to only work on certain days.
 
+```swift
+  override func touchesBegan(_: Set<UITouch>, with _: UIEvent?) {
+    try? AppIcon.alternate{
+     
+    }
+  }
+```
+Again, I'll use the name `getIcon` for the closure's argument.
 
-option click get icon, then icon.
+**Catie**  
+Then, in a `do` block, I'll see if I can in fact get the icon. If so, I'll change the hat's texture to match up with the app icon! Note that I've got to dispatch to the main queue because `setAlternateIconName`'s completion handler is not guaranteed to run there.
 
+```swift
+    try? AppIcon.alternate{
+      getIcon in
+      
+      do {
+        let icon = try getIcon()
+        
+        DispatchQueue.main.async{
+          self.texture = SKTexture(imageNamed: icon.textureName)
+        }
+      }
+    }
+```
+I need a reference to self for that but there's no point in retaining it.
 
-Match up with.
+```swift
+[unowned self]
+```
+
+If getting the icon fails, I'll just use `fatalError()`. 
+```swift
+      catch {fatalError()}
+```
+I'll show you why shortly.
+
+**Jessy**  
+I wrote the `textureName` extension property since the last screencast.
+> zoom in on it
+
+It's a way to translate the `CFBundleAlternateIcons` keys into the names of sprite textures. I'll use it to make the scene launch with a hat that matches the current app icon.
 
 ```swift
 ❌"Sombrero"❌
 self.init(imageNamed: AppIcon.current.textureName)
 ```
 
-We know those are going to match up for everything but the primary app icon, which is what actually corresponds to `"Sombrero"`. Let's handle that logic with a private extension of `AppIcon`.
-
-```swift
-private extension AppIcon {
-  var textureName: String {
-    return name ?? "Sombrero"
-  }
-}
-```
-
-touchesBegan: no point in retaining self
-processes the get accessor for the icon
+**Catie**  
+The second when you spell something wrong.
 
 
-`getIcon`: the get accessor, not the icon itself.
-
-
-```swift
- AppIcon.alternate{
-      [unowned self]
-      getIcon in
-      
-      do {
-        let icon = try getIcon()
-        
-           }
-      catch AppIcon.AlternateError.noAlternateToday {}
-      catch {fatalError()}
-    }
-```
-happens on background thread (queue? get wording right.)
-
-```swift
-DispatchQueue.main.async{
-	self.texture = SKTexture(imageNamed: icon.textureName)
-}
-```
-
-Demo both errors getting triggered. The first on a day that has no alternates. The second when you spell something wrong.
-
-
-Catie
-In a real app, you might want to alert the user that their easter egg is broken.
-
-Jessy
-Left unchecked, talk about a code smell!
 
 ## Conclusion
 experiment because this is brand and we don't actually know what all Apple will allow yet! 

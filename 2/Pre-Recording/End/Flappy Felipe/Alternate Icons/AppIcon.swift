@@ -42,7 +42,7 @@ enum AppIcon {
   }
   
   /// Alternate between the primary app icon and today's holiday icon
-  /// - Throws: AlternateError.noAlternateToday
+  /// - Throws: AppIcon.AlternateError.noHolidayToday
   static func alternate(
     processGetIcon: @escaping ( () throws -> AppIcon ) -> Void
   ) throws {

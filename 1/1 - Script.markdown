@@ -17,9 +17,9 @@ We asked Felipe what some of his favorite holidays are so we can add special ico
 **Catie**    
 Felipe loves Valentine's Day, because the ruling color is pink, his favorite, and because it's his wedding anniversary! He also likes Christmas, because he loves turkey. Let's start by adding alternate icons for these two holidays.
 
-I start by adding a new entry to the Information Property List. We want the one called `Icon files (iOS 5)`. Then I add a new dictionary entry above Primary Icon called `CFBundleAlternateIcons`, and inside of that, a dictionary entry with the name we want to use for an alternate icon.
+I'll start by adding a new entry to the Information Property List. We want the one called `Icon files (iOS 5)`. Then I'll add a new dictionary entry above Primary Icon called `CFBundleAlternateIcons`, and inside of that, a dictionary entry with the name we want to use for an alternate icon.
 
-Finally, inside of the Christmas dictionary, I add an array entry called `CFBundleIconFiles`, and add a string to it.
+Finally, inside of the Christmas dictionary, I'll add an array entry called `CFBundleIconFiles`, and add a string to it.
 
 > Add `Icon files (iOS 5)` entry to the plist in the plist view. Open the disclosure triangle.
 > 
@@ -30,9 +30,9 @@ Finally, inside of the Christmas dictionary, I add an array entry called `CFBund
 > Add `CFBundleIconFiles` array. Add empty string inside of it.
 
 **Jessy**  
-Editing p-lists like this can quickly become a painful experience, so at this point I'll switch to the code view.
+Editing p-lists like this can quickly become a painful experience, so at this point I'll switch to the source code view.
 
-> Command + click on Info.plist and Open As -> Source Code
+> Right click on Info.plist and Open As -> Source Code
 
 Now I can easily add the names of the icon files to this array. Then I just copy the entire Christmas entry and paste it right underneath to create an entry for Valentine's day!
 
@@ -54,14 +54,14 @@ Now I can easily add the names of the icon files to this array. Then I just copy
 		</array>
 	</dict>📦
 ```
-It doesn't matter at all what you name your icon files, the system will choose the correct size if it's included in this array. We did decide to use Apple's naming convention, however, so that we can omit the suffix and filename extensions in the plist and let the system find any 2x or 3x versions for us instead of having to add every single filename manually. 
+It doesn't matter at all what you name your icon files; the system will choose the correct size if it's included in this array. We did decide to use Apple's naming convention, however, so that we can omit the suffix and filename extensions in the plist and let the system find any 2x or 3x versions for us instead of having to add every single filename manually. 
 
 In this screencast, we're only including the required app icon sizes. In your apps, you should provide all of the same sizes for alternate icons that you do for your primary app icon.
 
 That will take care of the home screen icons for iPhone. What about iPad?
 
 **Catie**  
-We'll get to that in a minute. First, I'm going to clean this up a bit. We don't need the Newsstand Icon dictionary for this app, so I'll delete that part. And because we have everything necessary in the main assets catalog, we don't need to bother with the the Primary Icon data either.
+We'll get to that in a minute. First, I'm going to clean this up a bit. We don't need the Newsstand Icon dictionary for this app, so I'll delete that part. And we don't need to bother with the Primary Icon data either.
 
 > delete that stuff
 
@@ -79,7 +79,7 @@ It's also important to note that the system will be hunting for the alternate ic
 Now we can add alternate icon support for iPad. Back to the p-list! You have to create a separate dictionary to specify the alternate icon files for ipads. Luckily, it is structured in exactly the same way as the one we just made! I'll copy and paste the entire `CFBundleIcons` dictionary, and then add a little "tilde ipad" after `CFBundleIcons` to denote that these are the icons to be used on ipad.
 
 **Jessy**  
-With that done, it's easy to replace the icon numbers in each array to add the correct sizes for the ipad, and add an additional string to the array to handle the ipad pro size. 
+With that done, it's easy to replace the icon numbers in each array to add the correct sizes for ipad, and add an additional string to the array to handle the ipad pro size. 
 
 ```
   📦<key>CFBundleIcons😺~ipad🏁</key>
@@ -109,7 +109,7 @@ With that done, it's easy to replace the icon numbers in each array to add the c
 That's all we need to do in the p-list! Now the system will be aware that the project contains alternate icons, but we still have to build some kind of representaton of this in our code in order to set the icon to an alternate.
 
 **Catie**  
-Modeling AppIcon as an enumeration will work out fine for encapsulating what we want to explore with the alternate icons API. I'll start with two cases to represent the primary and valentine icons.
+Modeling AppIcon as an enumeration will work out fine for encapsulating what we want to explore with the alternate icons API. I'll start with three cases to represent the primary, valentine, and christmas icons.
 > Create `AppIcon.swift`
 
 ### *`AppIcon.swift`*
@@ -202,13 +202,13 @@ We've gone over all you need to know to get started with alternate app icons.
 Aside from actually creating the icons, most of the work is in matching up your Swift, and AlternateIcons property list dictionary.
 
 **Jessy**  
-Now we just need some way to trigger the alternate function.
+Now we just need some way to trigger the alternate method.
 
 ## Demo
 
 ### *`PlayerEntity.swift`*
 **Jessy**  
-Prior to the work you've seen in this screencast, the only notable change to the originalFlappy Felipé project that we'd made was to create an `SKSpriteNode` subclass, called `Hat`…
+Prior to the work you've seen in this screencast, the only notable change to the original Flappy Felipé project that we'd made was to create an `SKSpriteNode` subclass, called `Hat`…
 > command hover on Hat
 
 …to encapsulate the code …relevant to the hat.
@@ -225,9 +225,11 @@ override func touchesBegan(_: Set<UITouch>, with _: UIEvent?) {
 ```
 …and then, after building and running, when I tap the hat, the app icon will alternate back and forth!
 
+> Build an run. Demo switching the icon multiple times and showing the home screen to prove icon is changed.
+
 ## Interlude
 **Jessy**  
-That's fun! But mostly, because it's new! You may be wondering, aside from the obvious fact that we're giving you an API demo "_Why_ are we changing the app icon? Why is there a valentine's day-theme hat and why doesn't it show up in-game?"
+That's sort of fun! But mostly, because it's new! You may be wondering, aside from the obvious fact that we're giving you an API demo, "_Why_ are we changing the app icon? Why is there a valentine's day-themed hat and why doesn't it show up in-game?"
 
 **Catie**  
 Those questions are more than valid. Join us next time, and we'll go over some _practical_ sample code of how to use alternate app icons, including how to handle related errors. 

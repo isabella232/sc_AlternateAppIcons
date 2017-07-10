@@ -1,56 +1,120 @@
-## Introduction / Conclusion
-experiment because this is brand and we don't actually know what all Apple will allow yet! Easter egg in a game, might get through! App, who knows?!
+# Before starting, make sure…
+…*`AppIcon.swift`* has these:
 
-What does that mean?
-It's only literally Easter for one of these
+```swift
+  case primary
+  case valentine
+  case christmas
+  
+  
+	case thanksgiving
+```
+
+```swift
+  var name: String? {
+    switch self {
+    case .primary: return nil
+    case .valentine: return "Valentine"
+    case .christmas: return "Christmas"
+    case .thanksgiving: return "Thanksgiving"
+    }
+  }
+```
+…The Thanksgiving icons are set up in the Alternate Icons folder and Info.plist.
+
+## Introduction
+**Jessy**  
+Hello! It's screencast time! I'm Jessy; she's Catie!
+
+**Catie**  
+Following from our last screencast, where we went over how to set up alternate app icons for runtime use, in iOS 10.3, we're going to explore a potential application of those alternate icons. We'll also be demonstrating a way to deal with related errors.
+
+**Jessy**  
+You've always been able to push out updates to your app, in order to theme the home screen icon for different seasons. But it's never before been possible to allow the user to decide whether to use that theming. Due to the necessity of app review, it's also never been reliably practical to allow theming to occur for a single day.
+
+**Catie**  
+Now, we can do both of those things! Let's try them out by theming an app, including its icon, for holidays. 
+
 
 ## Demo
 ### *`AppIcon.swift`*
-`alternate` is going to be slightly more complex. I'll document what that will entail: alternating between the primary app icon and today's Easter egg.
+**Catie**  
+I'll start by documenting more clearly what this `alternate` method is going to do:  The alternation is between the primary app icon and today's holiday icon, if there is one.
 
 ```swift
-/// Alternate between the primary app icon and today's Easter egg
+/// Alternate between the primary app icon and today's holiday icon
 static func alternate() {
 ```
+> option-click the name to show that worked
+ 
+Then, I'll use a nested computed property to encapsulate the logic for what todaysHolidayIcon might be.
 
 ```swift
 static func alternate() {
-	😺var todaysAlternate: AppIcon? {
-      let currentDateComponents = Calendar.current.dateComponents(
-        [.day, .month],
-        from: .init()
-      )
-      switch (currentDateComponents.day!, currentDateComponents.month!) {
-      case (9, 7): return pinkSombrero
-      default: return nil
-      }
+	😺var todaysHolidayIcon: AppIcon? {   
     }
 ```
-
-
-More cases.
+I'll potentially need four date components to figure out the holiday.
 
 ```swift
-  case pinkSombrero
-  etc.
+    var todaysHolidayIcon: AppIcon? {
+      😺let currentDateComponents = Calendar.current.dateComponents(
+        [ .day, .month,
+          .weekOfMonth, .weekday
+        ],
+        from: .init()
+      )
+```
+**Jessy**  
+
+Thanksgiving in the US falls on the fourth Thursday in November…
+
+```swift
+      if
+        currentDateComponents.month == 11,
+        currentDateComponents.weekOfMonth == 4,
+        currentDateComponents.weekday == 5
+      {return thanksgiving}
+```
+The only other holidays we've got icons for right now are Valentine's Day and Christmas. If it's not one of these three days in question, `todaysHolidayIcon` is nil.
+
+```swift
+      switch (currentDateComponents.day!, currentDateComponents.month!) {
+      case (14, 2): return valentine
+      case (25, 12): return christmas
+      default: return nil
+      }
 ```
 
+**Catie**  
+If there's nothing to alternate to, let's throw an error. 
+
 ```swift
+  static func alternate() 😺throws {
+```
+
+I'll define the error case as `AlternateError.noHolidayToday`…
+
+```swift
+  case christmas
+  
   enum AlternateError: Error {
-    case noAlternateToday
+    case noHolidayToday
   }
+  
+  static var current: AppIcon {
 ```
+… and throw it when the current app icon is the primary one, and today is not a holiday.
 
 ```swift
     guard let icon =
       current == primary
       ? todaysAlternate
       : primary
-    else {
-      throw AlternateError.noAlternateToday
-      return
-    }
+    else {throw AlternateError.noAlternateToday}
 ```
+**Jessy**  
+We also should be dealing with 
 It's going to be asynchronous.
 
 ```swift
@@ -60,6 +124,12 @@ processGetIcon{throw AlternateError.noAlternateToday}
 Write processGetIcon last. Mention that we'll write it then.
 
 
+Now that that's all set up, let's allow one more error.
+```swift
+  enum AlternateError: Error {
+    case noAlternateToday
+  }
+```
 
 ## Demo
 ### *`Hat.swift`*
@@ -117,3 +187,6 @@ In a real app, you might want to alert the user that their easter egg is broken.
 
 Jessy
 Left unchecked, talk about a code smell!
+
+## Conclusion
+experiment because this is brand and we don't actually know what all Apple will allow yet! 

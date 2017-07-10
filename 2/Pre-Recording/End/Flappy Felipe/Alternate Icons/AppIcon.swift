@@ -25,11 +25,11 @@ import UIKit
 enum AppIcon {
   case primary
   case valentine
-  case christmas
   case thanksgiving
+  case christmas
   
   enum AlternateError: Error {
-    case noAlternateToday
+    case noHolidayToday
   }
   
   static var current: AppIcon {
@@ -41,11 +41,12 @@ enum AppIcon {
     ].first{$0.name == UIApplication.shared.alternateIconName}!
   }
   
-  /// Alternate between the primary app icon and today's Easter egg
+  /// Alternate between the primary app icon and today's holiday icon
+  /// - Throws: AlternateError.noAlternateToday
   static func alternate(
     processGetIcon: @escaping ( () throws -> AppIcon ) -> Void
-  ) {
-    var todaysAlternate: AppIcon? {
+  ) throws {
+    var todaysHolidayIcon: AppIcon? {
       let currentDateComponents = Calendar.current.dateComponents(
         [ .day, .month,
           .weekOfMonth, .weekday
@@ -68,12 +69,9 @@ enum AppIcon {
     
     guard let icon =
       current == primary
-      ? todaysAlternate
+      ? todaysHolidayIcon
       : primary
-    else {
-      processGetIcon{throw AlternateError.noAlternateToday}
-      return
-    }
+    else {throw AlternateError.noHolidayToday}
     
     UIApplication.shared.setAlternateIconName(icon.name){
       error in

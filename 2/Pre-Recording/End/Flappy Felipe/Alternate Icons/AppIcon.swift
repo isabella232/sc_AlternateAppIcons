@@ -67,11 +67,18 @@ enum AppIcon {
       }
     }
     
-    guard let icon =
-      current == primary
-      ? todaysHolidayIcon
-      : primary
-    else {throw AlternateError.noHolidayToday}
+    let icon: AppIcon
+    
+    if current == todaysHolidayIcon {
+      icon = primary
+    }
+    else {
+      switch (current, todaysHolidayIcon) {
+      case (primary, nil): throw AlternateError.noHolidayToday
+      case (_, let todaysHolidayIcon?): icon = todaysHolidayIcon
+      case (_, nil): icon = primary
+      }
+    }
     
     UIApplication.shared.setAlternateIconName(icon.name){
       error in

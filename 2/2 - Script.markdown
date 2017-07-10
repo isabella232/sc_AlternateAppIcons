@@ -39,6 +39,9 @@ private extension AppIcon {
 ```
 …The Thanksgiving icons are set up in the Alternate Icons folder and Info.plist.
 
+…System date is set to Thanksgiving and it's open for switching to xmas later
+…Calendar notifications for December are off
+
 ## Introduction
 **Jessy**  
 Hello! It's screencast time! I'm Jessy; she's Catie!
@@ -267,7 +270,18 @@ It's a way to translate the `CFBundleAlternateIcons` keys into the names of spri
 self.init(imageNamed: AppIcon.current.textureName)
 ```
 
+And now, let's see what we've cooked up for Thanksgiving!
+
+> build and run
+
 **Catie**  
+(We set the date to Thanksgiving 2017 before starting the screencast.)
+
+**Jessy**  
+Pumpkin Pie!
+
+Now I'll set the date to Christmas…
+
 The second when you spell something wrong.
 
 

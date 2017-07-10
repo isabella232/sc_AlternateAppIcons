@@ -34,10 +34,14 @@ enum AppIcon {
   }
   
   static func alternate() {
-    let icon =
-      current == primary
-      ? valentine
-      : primary
+    let icon: AppIcon
+    
+    if current == valentine {
+      icon = primary
+    }
+    else {
+      icon = valentine
+    }
     
     UIApplication.shared.setAlternateIconName(icon.name)
   }

@@ -43,23 +43,17 @@
 		0430DEC11E6C68890010C348 /* MainMenuState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0430DEC01E6C68890010C348 /* MainMenuState.swift */; };
 		0430DEC31E6C689B0010C348 /* TutorialState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0430DEC21E6C689B0010C348 /* TutorialState.swift */; };
 		0430DEC71E6CB7490010C348 /* AnimationComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0430DEC61E6CB7490010C348 /* AnimationComponent.swift */; };
-		0A95DC861F12D9BF00FE1492 /* Icon-83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A95DC711F12D9BD00FE1492 /* Icon-83.5@2x.png */; };
 		0A95DC871F12D9BF00FE1492 /* ThanksgivingIcon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A95DC721F12D9BD00FE1492 /* ThanksgivingIcon-76@2x.png */; };
-		0A95DC881F12D9BF00FE1492 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A95DC731F12D9BD00FE1492 /* Icon-60@2x.png */; };
 		0A95DC891F12D9BF00FE1492 /* ValentineIcon-83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A95DC741F12D9BD00FE1492 /* ValentineIcon-83.5@2x.png */; };
 		0A95DC8A1F12D9BF00FE1492 /* ThanksgivingIcon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A95DC751F12D9BD00FE1492 /* ThanksgivingIcon-60@3x.png */; };
-		0A95DC8B1F12D9BF00FE1492 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A95DC761F12D9BD00FE1492 /* Icon.png */; };
-		0A95DC8C1F12D9BF00FE1492 /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A95DC771F12D9BD00FE1492 /* Icon-76@2x.png */; };
 		0A95DC8D1F12D9BF00FE1492 /* ChristmasIcon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A95DC781F12D9BD00FE1492 /* ChristmasIcon-76@2x.png */; };
 		0A95DC8E1F12D9BF00FE1492 /* ValentineIcon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A95DC791F12D9BD00FE1492 /* ValentineIcon-76.png */; };
 		0A95DC8F1F12D9BF00FE1492 /* ValentineIcon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A95DC7A1F12D9BE00FE1492 /* ValentineIcon-60@2x.png */; };
 		0A95DC901F12D9BF00FE1492 /* ChristmasIcon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A95DC7B1F12D9BE00FE1492 /* ChristmasIcon-60@3x.png */; };
 		0A95DC911F12D9BF00FE1492 /* ChristmasIcon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A95DC7C1F12D9BE00FE1492 /* ChristmasIcon-60@2x.png */; };
-		0A95DC921F12D9BF00FE1492 /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A95DC7D1F12D9BE00FE1492 /* Icon-76.png */; };
 		0A95DC931F12D9BF00FE1492 /* ValentineIcon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A95DC7E1F12D9BE00FE1492 /* ValentineIcon-76@2x.png */; };
 		0A95DC941F12D9BF00FE1492 /* ThanksgivingIcon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A95DC7F1F12D9BE00FE1492 /* ThanksgivingIcon-76.png */; };
 		0A95DC951F12D9BF00FE1492 /* ThanksgivingIcon-83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A95DC801F12D9BE00FE1492 /* ThanksgivingIcon-83.5@2x.png */; };
-		0A95DC961F12D9BF00FE1492 /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A95DC811F12D9BE00FE1492 /* Icon-60@3x.png */; };
 		0A95DC971F12D9BF00FE1492 /* ChristmasIcon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A95DC821F12D9BE00FE1492 /* ChristmasIcon-76.png */; };
 		0A95DC981F12D9BF00FE1492 /* ValentineIcon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A95DC831F12D9BE00FE1492 /* ValentineIcon-60@3x.png */; };
 		0A95DC991F12D9BF00FE1492 /* ThanksgivingIcon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A95DC841F12D9BE00FE1492 /* ThanksgivingIcon-60@2x.png */; };
@@ -107,23 +101,17 @@
 		0430DEC01E6C68890010C348 /* MainMenuState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuState.swift; sourceTree = "<group>"; };
 		0430DEC21E6C689B0010C348 /* TutorialState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialState.swift; sourceTree = "<group>"; };
 		0430DEC61E6CB7490010C348 /* AnimationComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationComponent.swift; sourceTree = "<group>"; };
-		0A95DC711F12D9BD00FE1492 /* Icon-83.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-83.5@2x.png"; sourceTree = "<group>"; };
 		0A95DC721F12D9BD00FE1492 /* ThanksgivingIcon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ThanksgivingIcon-76@2x.png"; sourceTree = "<group>"; };
-		0A95DC731F12D9BD00FE1492 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
 		0A95DC741F12D9BD00FE1492 /* ValentineIcon-83.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ValentineIcon-83.5@2x.png"; sourceTree = "<group>"; };
 		0A95DC751F12D9BD00FE1492 /* ThanksgivingIcon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ThanksgivingIcon-60@3x.png"; sourceTree = "<group>"; };
-		0A95DC761F12D9BD00FE1492 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
-		0A95DC771F12D9BD00FE1492 /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
 		0A95DC781F12D9BD00FE1492 /* ChristmasIcon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChristmasIcon-76@2x.png"; sourceTree = "<group>"; };
 		0A95DC791F12D9BD00FE1492 /* ValentineIcon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ValentineIcon-76.png"; sourceTree = "<group>"; };
 		0A95DC7A1F12D9BE00FE1492 /* ValentineIcon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ValentineIcon-60@2x.png"; sourceTree = "<group>"; };
 		0A95DC7B1F12D9BE00FE1492 /* ChristmasIcon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChristmasIcon-60@3x.png"; sourceTree = "<group>"; };
 		0A95DC7C1F12D9BE00FE1492 /* ChristmasIcon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChristmasIcon-60@2x.png"; sourceTree = "<group>"; };
-		0A95DC7D1F12D9BE00FE1492 /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
 		0A95DC7E1F12D9BE00FE1492 /* ValentineIcon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ValentineIcon-76@2x.png"; sourceTree = "<group>"; };
 		0A95DC7F1F12D9BE00FE1492 /* ThanksgivingIcon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ThanksgivingIcon-76.png"; sourceTree = "<group>"; };
 		0A95DC801F12D9BE00FE1492 /* ThanksgivingIcon-83.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ThanksgivingIcon-83.5@2x.png"; sourceTree = "<group>"; };
-		0A95DC811F12D9BE00FE1492 /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
 		0A95DC821F12D9BE00FE1492 /* ChristmasIcon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChristmasIcon-76.png"; sourceTree = "<group>"; };
 		0A95DC831F12D9BE00FE1492 /* ValentineIcon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ValentineIcon-60@3x.png"; sourceTree = "<group>"; };
 		0A95DC841F12D9BE00FE1492 /* ThanksgivingIcon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ThanksgivingIcon-60@2x.png"; sourceTree = "<group>"; };
@@ -261,7 +249,7 @@
 			name = GameStates;
 			sourceTree = "<group>";
 		};
-		49B8BFB11ED6338F00C77502 /* Alternate Icons */ = {
+		497717511F1337D300831B35 /* Christmas */ = {
 			isa = PBXGroup;
 			children = (
 				0A95DC7C1F12D9BE00FE1492 /* ChristmasIcon-60@2x.png */,
@@ -269,22 +257,40 @@
 				0A95DC821F12D9BE00FE1492 /* ChristmasIcon-76.png */,
 				0A95DC781F12D9BD00FE1492 /* ChristmasIcon-76@2x.png */,
 				0A95DC851F12D9BF00FE1492 /* ChristmasIcon-83.5@2x.png */,
-				0A95DC731F12D9BD00FE1492 /* Icon-60@2x.png */,
-				0A95DC811F12D9BE00FE1492 /* Icon-60@3x.png */,
-				0A95DC7D1F12D9BE00FE1492 /* Icon-76.png */,
-				0A95DC771F12D9BD00FE1492 /* Icon-76@2x.png */,
-				0A95DC711F12D9BD00FE1492 /* Icon-83.5@2x.png */,
-				0A95DC761F12D9BD00FE1492 /* Icon.png */,
+			);
+			name = Christmas;
+			sourceTree = "<group>";
+		};
+		497717521F13390300831B35 /* Thanksgiving */ = {
+			isa = PBXGroup;
+			children = (
 				0A95DC841F12D9BE00FE1492 /* ThanksgivingIcon-60@2x.png */,
 				0A95DC751F12D9BD00FE1492 /* ThanksgivingIcon-60@3x.png */,
 				0A95DC7F1F12D9BE00FE1492 /* ThanksgivingIcon-76.png */,
 				0A95DC721F12D9BD00FE1492 /* ThanksgivingIcon-76@2x.png */,
 				0A95DC801F12D9BE00FE1492 /* ThanksgivingIcon-83.5@2x.png */,
+			);
+			name = Thanksgiving;
+			sourceTree = "<group>";
+		};
+		497717531F13390F00831B35 /* Valentine */ = {
+			isa = PBXGroup;
+			children = (
 				0A95DC7A1F12D9BE00FE1492 /* ValentineIcon-60@2x.png */,
 				0A95DC831F12D9BE00FE1492 /* ValentineIcon-60@3x.png */,
 				0A95DC791F12D9BD00FE1492 /* ValentineIcon-76.png */,
 				0A95DC7E1F12D9BE00FE1492 /* ValentineIcon-76@2x.png */,
 				0A95DC741F12D9BD00FE1492 /* ValentineIcon-83.5@2x.png */,
+			);
+			name = Valentine;
+			sourceTree = "<group>";
+		};
+		49B8BFB11ED6338F00C77502 /* Alternate Icons */ = {
+			isa = PBXGroup;
+			children = (
+				497717531F13390F00831B35 /* Valentine */,
+				497717521F13390300831B35 /* Thanksgiving */,
+				497717511F1337D300831B35 /* Christmas */,
 				49B8BFB21ED633B700C77502 /* AppIcon.swift */,
 			);
 			name = "Alternate Icons";
@@ -352,12 +358,9 @@
 			files = (
 				0A95DC991F12D9BF00FE1492 /* ThanksgivingIcon-60@2x.png in Resources */,
 				0A95DC8F1F12D9BF00FE1492 /* ValentineIcon-60@2x.png in Resources */,
-				0A95DC8B1F12D9BF00FE1492 /* Icon.png in Resources */,
 				0A95DC951F12D9BF00FE1492 /* ThanksgivingIcon-83.5@2x.png in Resources */,
 				0A95DC8A1F12D9BF00FE1492 /* ThanksgivingIcon-60@3x.png in Resources */,
 				0A95DC971F12D9BF00FE1492 /* ChristmasIcon-76.png in Resources */,
-				0A95DC961F12D9BF00FE1492 /* Icon-60@3x.png in Resources */,
-				0A95DC8C1F12D9BF00FE1492 /* Icon-76@2x.png in Resources */,
 				0A95DC891F12D9BF00FE1492 /* ValentineIcon-83.5@2x.png in Resources */,
 				0430DEAE1E69FBD70010C348 /* whack.wav in Resources */,
 				0A95DC911F12D9BF00FE1492 /* ChristmasIcon-60@2x.png in Resources */,
@@ -375,12 +378,9 @@
 				0A95DC8D1F12D9BF00FE1492 /* ChristmasIcon-76@2x.png in Resources */,
 				0430DEAB1E69FBD70010C348 /* flapping.wav in Resources */,
 				0430DE771E69F8920010C348 /* LaunchScreen.storyboard in Resources */,
-				0A95DC881F12D9BF00FE1492 /* Icon-60@2x.png in Resources */,
 				0A95DC981F12D9BF00FE1492 /* ValentineIcon-60@3x.png in Resources */,
 				0A95DC871F12D9BF00FE1492 /* ThanksgivingIcon-76@2x.png in Resources */,
-				0A95DC921F12D9BF00FE1492 /* Icon-76.png in Resources */,
 				0A95DC9A1F12D9BF00FE1492 /* ChristmasIcon-83.5@2x.png in Resources */,
-				0A95DC861F12D9BF00FE1492 /* Icon-83.5@2x.png in Resources */,
 				0430DEAA1E69FBD70010C348 /* falling.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

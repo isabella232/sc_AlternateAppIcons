@@ -14,14 +14,12 @@ And finally, thanks to Felipe Laso-Marsetti, the game's namesake.
 We asked Felipe what some of his favorite holidays are so we can add special icons to celebrate them with the game. To add alternate icons, the first stop is the info plist.
 
 ## Demo
-[do primary, valentine, and christmas to show at least two alternates.]
-
 **Catie**    
 Felipe loves Valentine's Day, because the ruling color is pink, his favorite, and because it's his wedding anniversary! He also likes Christmas, because he loves turkey. Let's start by adding alternate icons for these two holidays.
 
-Add a new entry to the Information Property List. You want the one called `Icon files (iOS 5)`. Then add a new dictionary entry above Primary Icon called `CFBundleAlternateIcons`, and inside of that, add a dictionary entry with the name you want to use for an alternate icon.
+I start by adding a new entry to the Information Property List. We want the one called `Icon files (iOS 5)`. Then I add a new dictionary entry above Primary Icon called `CFBundleAlternateIcons`, and inside of that, a dictionary entry with the name we want to use for an alternate icon.
 
-Finally, inside of the Christmas dictionary, add an array entry called `CFBundleIconFiles`, and add a string to it.
+Finally, inside of the Christmas dictionary, I add an array entry called `CFBundleIconFiles`, and add a string to it.
 
 > Add `Icon files (iOS 5)` entry to the plist in the plist view. Open the disclosure triangle.
 > 
@@ -32,11 +30,11 @@ Finally, inside of the Christmas dictionary, add an array entry called `CFBundle
 > Add `CFBundleIconFiles` array. Add empty string inside of it.
 
 **Jessy**  
-Editing p-lists like this can quickly become a painful experience, so at this point switch to the code view.
+Editing p-lists like this can quickly become a painful experience, so at this point I'll switch to the code view.
 
 > Command + click on Info.plist and Open As -> Source Code
 
-Now we can easily add the names of the icon files to this array. Then just copy the entire Christmas entry and paste it right underneath to create an entry for Valentine's day!
+Now I can easily add the names of the icon files to this array. Then I just copy the entire Christmas entry and paste it right underneath to create an entry for Valentine's day!
 
 ```
 <key>CFBundleAlternateIcons</key>
@@ -63,7 +61,7 @@ In this screencast, we're only including the required app icon sizes. In your ap
 That will take care of the home screen icons for iPhone. What about iPad?
 
 **Catie**  
-We'll get to that in a minute. First, let's clean this up a bit. We don't need the Newsstand Icon dictionary for this app, so delete that part. And because we have everything necessary in the main assets catalog, we don't need to bother with the the Primary Icon data either.
+We'll get to that in a minute. First, I'm going to clean this up a bit. We don't need the Newsstand Icon dictionary for this app, so I'll delete that part. And because we have everything necessary in the main assets catalog, we don't need to bother with the the Primary Icon data either.
 
 > delete that stuff
 
@@ -78,7 +76,7 @@ In an asset catalog.
 Very unfortunately, you can't use asset catalogs for alternate icons.
 It's also important to note that the system will be hunting for the alternate icon files in the main resources directory of the bundle, so none of this will work if you use folders to organize the project.
 
-Now we can add alternate icon support for iPad. Back to the p-list! You have to create a separate dictionary to specify the alternate icon files for ipads. Luckily, it is structured in exactly the same way as the one we just made! Copy and paste the entire `CFBundleIcons` dictionary, and add a little "tilde ipad" after `CFBundleIcons` to denote that these are the icons to be used on ipad.
+Now we can add alternate icon support for iPad. Back to the p-list! You have to create a separate dictionary to specify the alternate icon files for ipads. Luckily, it is structured in exactly the same way as the one we just made! I'll copy and paste the entire `CFBundleIcons` dictionary, and then add a little "tilde ipad" after `CFBundleIcons` to denote that these are the icons to be used on ipad.
 
 **Jessy**  
 With that done, it's easy to replace the icon numbers in each array to add the correct sizes for the ipad, and add an additional string to the array to handle the ipad pro size. 
@@ -108,7 +106,7 @@ With that done, it's easy to replace the icon numbers in each array to add the c
   </dict>📦
 ```
 
-That's all you need to do in the p-list! Now the system will be aware that your project contains alternate icons, but we still have to build some kind of representaton of this in our code in order to set the icon to an alternate.
+That's all we need to do in the p-list! Now the system will be aware that the project contains alternate icons, but we still have to build some kind of representaton of this in our code in order to set the icon to an alternate.
 
 **Catie**  
 Modeling AppIcon as an enumeration will work out fine for encapsulating what we want to explore with the alternate icons API. I'll start with two cases to represent the primary and valentine icons.

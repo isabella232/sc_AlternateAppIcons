@@ -29,7 +29,7 @@ final class Hat: SKSpriteNode {
   }
 
   override func touchesBegan(_: Set<UITouch>, with _: UIEvent?) {
-    AppIcon.alternate{
+    try? AppIcon.alternate{
       [unowned self]
       getIcon in
       
@@ -40,7 +40,6 @@ final class Hat: SKSpriteNode {
           self.texture = SKTexture(imageNamed: icon.textureName)
         }
       }
-      catch AppIcon.AlternateError.noAlternateToday {}
       catch {fatalError()}
     }
   }

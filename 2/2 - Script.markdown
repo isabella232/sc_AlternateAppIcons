@@ -114,25 +114,88 @@ I'll define the error case as `AlternateError.noHolidayToday`…
     else {throw AlternateError.noAlternateToday}
 ```
 **Jessy**  
-We also should be dealing with 
-It's going to be asynchronous.
+We also _should_ be dealing with the asynchronous error that `setAlternateIconName` might throw, in its "completion handler".
+> option click `setAlternateIconName`
 
-```swift
-processGetIcon{throw AlternateError.noAlternateToday}
-```
+## Interlude
+Another piece of information that that we need asynchronously, to theme other parts of the app, is what icon the app was switched to in the case where _no_ error occurs when using `setAlternateIconName`.
 
-Write processGetIcon last. Mention that we'll write it then.
+**Catie**  
+Processing asynchronous errors in Swift, as you may be familiar with, isn't as straightforward as working synchronously. In this case, our method needs to process either an AppIcon, or an Error, asynchronously.
 
-
-Now that that's all set up, let's allow one more error.
-```swift
-  enum AlternateError: Error {
-    case noAlternateToday
-  }
-```
+**Jessy**  
+The way we think is simplest to handle that, in Swift, is to process a closure that either _returns_ an an AppIcon, or throws an Error. Let's see what that looks like.
 
 ## Demo
+### *`AppIcon.swift`*
+
+**Catie**  
+_If_ we were able to guarantee that `setAlternateIconName` would succeed. we could use a completion handler-style closure whose argument is an app icon. And we could call that "processIcon", as that's what it would do.
+
+```swift
+  static func alternate(
+    processIcon: @escaping (AppIcon) -> Void
+  ) throws {
+```
+
+Then, we could call `processIcon`, in `setAlternateIconName`'s `completionHandler`.
+
+```swift
+    UIApplication.shared.setAlternateIconName(icon.name){
+      error in
+      
+      processIcon(icon)
+    }
+```
+
+…but that shouldn't be done when there's an error.
+```swift
+     if let error = error {
+        return
+      }
+```
+**Jessy**  
+That would work, but just `return`-ing there, doesn't allow for the caller of the alternate function to have any idea that something went wrong. We can't directly propagate the error…
+
+```swift
+      if let error = error {
+        throw error
+        return
+      }
+```
+But we could, if we were change `alternate `'s argument a bit.
+
+Instead of processing an icon directly, we could process a closure that either returns one, or throws an error.
+
+```swift
+ ( () throws -> AppIcon )
+```
+If get accessors could throw, that would be what their signatures would look like. So I'll rename the parameter to "process _Get_ Icon".
+
+**Catie**  
+Then, it's easy enough to create a _closure_ that returns `icon`, by switching from parentheses to braces…
+
+```swift
+      processGetIcon{icon}
+```
+
+and using that same syntax, throwing `setAlternateIconName`'s error, when it exists, and should be propagated. 
+```swift
+      if let error = error {
+        😺processGetIcon{throw error}
+        return
+      }
+```
+
+Now we're ready to alternate icons! Let's continue to do that by tapping on Felipe's hat.
+
 ### *`Hat.swift`*
+**Jessy**  
+In Hat.swift…
+
+
+option click get icon, then icon.
+
 
 Match up with.
 

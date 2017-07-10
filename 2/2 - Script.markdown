@@ -68,7 +68,7 @@ static func alternate() {
 ```
 > option-click the name to show that worked
  
-Then, I'll use a nested computed property to encapsulate the logic for what todaysHolidayIcon might be.
+Then, I'll use a nested computed property to encapsulate the logic for what `todaysHolidayIcon` might be.
 
 ```swift
 static func alternate() {
@@ -88,7 +88,7 @@ I'll potentially need four date components to figure out the holiday.
 ```
 **Jessy**  
 
-Thanksgiving in the US falls on the fourth Thursday in November…
+Thanksgiving in the US falls on the fourth Thursday in November.
 
 ```swift
       if
@@ -126,6 +126,7 @@ I'll define the error case as `AlternateError.noHolidayToday`…
   static var current: AppIcon {
 ```
 …document that it's what alternate might throw
+
 ```swift
 /// Alternate between the primary app icon and today's holiday icon
 /// - Throws: AppIcon.AlternateError.noHolidayToday
@@ -179,6 +180,7 @@ Then, we could call `processIcon`, in `setAlternateIconName`'s `completionHandle
 ```
 
 …but that shouldn't be done when there's an error.
+
 ```swift
      if let error = error {
         return
@@ -193,14 +195,16 @@ That would work, but just `return`-ing there, doesn't allow for the caller of th
         return
       }
 ```
-But we could, if we were change `alternate `'s argument a bit.
+But we could, if we were to change `alternate `'s argument a bit.
 
 Instead of processing an icon directly, we could process a closure that either returns one, or throws an error.
 
 ```swift
  ( () throws -> AppIcon )
 ```
-If get accessors could throw, that would be what their signatures would look like. So I'll rename the parameter to "process _Get_ Icon".
+If get accessors could throw, this would be what their signatures would look like. So I'll rename the parameter to "process _Get_ Icon".
+
+> rename to `processGetIcon`
 
 **Catie**  
 Then, it's easy enough to create a _closure_ that returns `icon`, by switching from parentheses to braces…
@@ -218,7 +222,7 @@ and using that same syntax, throwing `setAlternateIconName`'s error, when it exi
       }
 ```
 
-Now we're ready to alternate icons! Let's continue from last, doing that by tapping on Felipe's hat.
+Now we're ready to alternate icons! Let's continue from last time, doing that by tapping on Felipe's hat.
 
 ### *`Hat.swift`*
 **Jessy**  
@@ -256,6 +260,7 @@ I need a reference to self for that but there's no point in retaining it.
 ```
 
 If getting the icon fails, I'll just use `fatalError()`. 
+
 ```swift
       catch {fatalError()}
 ```
@@ -280,7 +285,7 @@ And now, let's see what we've cooked up for Thanksgiving!
 (We set the date to Thanksgiving 2017 before starting the screencast.)
 
 **Jessy**  
-Pumpkin Pie!
+Pumpkin Pie! Felipe's favorite!
 > command-2 (just demo) each time
 
 Now I'll set the date to Christmas…
@@ -298,7 +303,7 @@ Now, let's trigger my error, fatally!
 ### *`AppIcon.swift`*
 > Change "Christmas" to the xmas emojis
 
-Changing the name for the Christmas app icon will cause the `alternate` method to look up a key that isn't in the Alternate Icons property list dictionary, and that will trigger the propagated error, in `Hat`'s touchesBegan method.
+Changing the name for the Christmas app icon will cause the `alternate` method to look up a key that is not in the Alternate Icons property list dictionary, and that will trigger the propagated error, in `Hat`'s touchesBegan method.
 
 > show that happening
 
@@ -311,7 +316,7 @@ There's no documentation for why `setAlternateIconName` might throw an error, ot
 This is just one idea of how you might use alternate icons to add some fun engagement to your app. It's important to note that Apple's documentation states that app icons should only be changed at the user's request. This functionality is brand new, so we don't yet have a clear picture of what will pass app review!
 
 **Jessy**  
-It's a great time to experiment! A great use case that has already made it into the app store is theme personalization. If you're a sportsball fan, there are some sportsball-related apps available that let you change the icon to represent your favorite team.
+It's a great time to experiment! A use case that has already made it into the app store is theme personalization. If you're a sportsball fan, there are some sportsball-related apps available that let you change the icon to represent your favorite team.
 
 **Catie**  
 Personally, I prefer fancy hat easter eggs.

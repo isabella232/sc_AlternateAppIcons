@@ -21,7 +21,7 @@ Felipe loves Valentine's Day, because the ruling color is pink, his favorite, an
 
 Add a new entry to the Information Property List. You want the one called `Icon files (iOS 5)`. Then add a new dictionary entry above Primary Icon called `CFBundleAlternateIcons`, and inside of that, add a dictionary entry with the name you want to use for an alternate icon.
 
-Finally, inside of the Christmas dictionary, add an array entry called `CFBundleIconFiles`, and add a string entry to it.
+Finally, inside of the Christmas dictionary, add an array entry called `CFBundleIconFiles`, and add a string to it.
 
 > Add `Icon files (iOS 5)` entry to the plist in the plist view. Open the disclosure triangle.
 > 
@@ -56,9 +56,7 @@ Now we can easily add the names of the icon files to this array. Then just copy 
 		</array>
 	</dict>📦
 ```
-It doesn't actually matter what you name your icon files, the system will choose the correct size if it's included in this array. We did decide to use Apple's naming convention, however, so that we can omit the suffix and filename extensions in the plist, and let the system find any 2x or 3x versions for us instead of having to add every single filename manually. 
-
-> Show icon names in the Alternate Icons/Valentine folder
+It doesn't matter at all what you name your icon files, the system will choose the correct size if it's included in this array. We did decide to use Apple's naming convention, however, so that we can omit the suffix and filename extensions in the plist and let the system find any 2x or 3x versions for us instead of having to add every single filename manually. 
 
 In this screencast, we're only including the required app icon sizes. In your apps, you should provide all of the same sizes for alternate icons that you do for your primary app icon.
 
@@ -78,11 +76,12 @@ In an asset catalog.
 > show the asset catalog entry for the App Icon
 
 Very unfortunately, you can't use asset catalogs for alternate icons.
-It's also important to note that the system will be hunting for the icon files in the main resources directory of the bundle, so none of this will work if you use folders to organize the project.
+It's also important to note that the system will be hunting for the alternate icon files in the main resources directory of the bundle, so none of this will work if you use folders to organize the project.
 
-Now we can add alternate icon support for iPad. Back to the p-list! Copy the entire `CFBundleIcons` dictionary and paste it just below itself. Then add a little tilde ipad after `CFBundleIcons` to specify that these are the icons to be used on ipad.
+Now we can add alternate icon support for iPad. Back to the p-list! You have to create a separate dictionary to specify the alternate icon files for ipads. Luckily, it is structured in exactly the same way as the one we just made! Copy and paste the entire `CFBundleIcons` dictionary, and add a little "tilde ipad" after `CFBundleIcons` to denote that these are the icons to be used on ipad.
 
-Now you just replace the icon numbers in each array to add the correct sizes for the ipad, and add an additional string to handle the ipad pro size:
+**Jessy**  
+With that done, it's easy to replace the icon numbers in each array to add the correct sizes for the ipad, and add an additional string to the array to handle the ipad pro size. 
 
 ```
   📦<key>CFBundleIcons😺~ipad🏁</key>
@@ -108,6 +107,8 @@ Now you just replace the icon numbers in each array to add the correct sizes for
     </dict>
   </dict>📦
 ```
+
+That's all you need to do in the p-list! Now the system will be aware that your project contains alternate icons, but we still have to build some kind of representaton of this in our code in order to set the icon to an alternate.
 
 ## Interlude
 "Let's work with it in code."

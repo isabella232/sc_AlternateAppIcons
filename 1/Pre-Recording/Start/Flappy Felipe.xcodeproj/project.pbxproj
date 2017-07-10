@@ -192,7 +192,7 @@
 				0430DEB11E6A71610010C348 /* PlayerEntity.swift */,
 				0430DEB71E6B00BB0010C348 /* ObstacleEntity.swift */,
 			);
-			name = Entities;
+			path = Entities;
 			sourceTree = "<group>";
 		};
 		0430DEB01E6A712B0010C348 /* Components */ = {
@@ -202,7 +202,7 @@
 				0430DEB51E6A77350010C348 /* MovementComponent.swift */,
 				0430DEC61E6CB7490010C348 /* AnimationComponent.swift */,
 			);
-			name = Components;
+			path = Components;
 			sourceTree = "<group>";
 		};
 		0430DEB91E6B43A60010C348 /* GameStates */ = {
@@ -214,7 +214,7 @@
 				0430DEC01E6C68890010C348 /* MainMenuState.swift */,
 				0430DEC21E6C689B0010C348 /* TutorialState.swift */,
 			);
-			name = GameStates;
+			path = GameStates;
 			sourceTree = "<group>";
 		};
 		49B8BFB11ED6338F00C77502 /* Alternate Icons */ = {

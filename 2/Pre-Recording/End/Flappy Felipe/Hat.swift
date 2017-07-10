@@ -48,6 +48,27 @@ final class Hat: SKSpriteNode {
 
 private extension AppIcon {
   var textureName: String {
-    return name ?? "Sombrero"
+    if let name = name {
+      return name + " Hat"
+    }
+    else {
+      return "Sombrero"
+    }
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -13,7 +13,16 @@ where to get it
 ## Demo
 [do primary, valentine, and christmas to show at least two alternates.]
 
+won't need Newsstand Icon dictionary for this app, delete that
+because we have everything necessary in the main assets catalog, we don't need to bother with the the Primary Icon data either.
+> delete that
 
+**Jessy**  
+Where's that set up?
+
+**Catie**  
+In an asset catalog.
+Very unfortunately, you can't use asset catalogs for icons.
 
 ## Interlude
 "Let's work with it in code."

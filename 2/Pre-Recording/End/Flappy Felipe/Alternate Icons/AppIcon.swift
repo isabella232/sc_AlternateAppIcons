@@ -24,9 +24,9 @@ import UIKit
 
 enum AppIcon {
   case primary
+  case valentine
   case christmas
   case thanksgiving
-  case valentine
   
   enum AlternateError: Error {
     case noAlternateToday
@@ -35,9 +35,9 @@ enum AppIcon {
   static var current: AppIcon {
     return [
       primary,
+      valentine,
       christmas,
-      thanksgiving,
-      valentine
+      thanksgiving
     ].first{$0.name == UIApplication.shared.alternateIconName}!
   }
   
@@ -47,11 +47,21 @@ enum AppIcon {
   ) {
     var todaysAlternate: AppIcon? {
       let currentDateComponents = Calendar.current.dateComponents(
-        [.day, .month],
+        [ .day, .month,
+          .weekOfMonth, .weekday
+        ],
         from: .init()
       )
+      
+      if
+        currentDateComponents.month == 11,
+        currentDateComponents.weekOfMonth == 4,
+        currentDateComponents.weekday == 5
+      {return thanksgiving}
+      
       switch (currentDateComponents.day!, currentDateComponents.month!) {
-      case (9, 7): return thanksgiving
+      case (14, 2): return valentine
+      case (25, 12): return christmas
       default: return nil
       }
     }
@@ -80,12 +90,18 @@ enum AppIcon {
   var name: String? {
     switch self {
     case .primary: return nil
+    case .valentine: return "Valentine"
     case .christmas: return "Christmas"
     case .thanksgiving: return "Thanksgiving"
-    case .valentine: return "Valentine"
     }
   }
 }
+
+
+
+
+
+
 
 
 

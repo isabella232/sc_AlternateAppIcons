@@ -294,9 +294,17 @@ And it's Santa Felipe!
 
 And with another tap, the app's back to normal!
 
-The second when you spell something wrong.
+Now, let's trigger my error, fatally!
+### *`AppIcon.swift`*
+> Change "Christmas" to the xmas emojis
 
+Changing the name for the Christmas app icon will cause the `alternate` method to look up a key that isn't in the Alternate Icons property list dictionary, and that will trigger the propagated error, in `Hat`'s touchesBegan method.
 
+> show that happening
 
 ## Conclusion
+
+**Jessy**  
+There's no documentation for why `setAlternateIconName` might throw an error, other than due to _programmer_ error, so fatal error might actually be a reasonable option, depending on the test coverage of your app. Coming up with a way to keep your Info.plist and Swift code in-sync, is up to you.
+ 
 experiment because this is brand and we don't actually know what all Apple will allow yet! 

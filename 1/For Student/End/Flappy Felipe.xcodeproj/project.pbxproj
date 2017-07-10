@@ -54,6 +54,7 @@
 		4977174E1F1335B900831B35 /* ChristmasIcon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 497717491F1335B900831B35 /* ChristmasIcon-76@2x.png */; };
 		4977174F1F1335B900831B35 /* ChristmasIcon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 4977174A1F1335B900831B35 /* ChristmasIcon-76.png */; };
 		497717501F1335B900831B35 /* ChristmasIcon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4977174B1F1335B900831B35 /* ChristmasIcon-60@2x.png */; };
+		49A95B601F13F15100AEE2F5 /* AppIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A95B5F1F13F15100AEE2F5 /* AppIcon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -106,6 +107,7 @@
 		497717491F1335B900831B35 /* ChristmasIcon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ChristmasIcon-76@2x.png"; path = "../../../../2/Pre-Recording/End/Flappy Felipe/ChristmasIcon-76@2x.png"; sourceTree = "<group>"; };
 		4977174A1F1335B900831B35 /* ChristmasIcon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ChristmasIcon-76.png"; path = "../../../../2/Pre-Recording/End/Flappy Felipe/ChristmasIcon-76.png"; sourceTree = "<group>"; };
 		4977174B1F1335B900831B35 /* ChristmasIcon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ChristmasIcon-60@2x.png"; path = "../../../../2/Pre-Recording/End/Flappy Felipe/ChristmasIcon-60@2x.png"; sourceTree = "<group>"; };
+		49A95B5F1F13F15100AEE2F5 /* AppIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppIcon.swift; path = "Alternate Icons/AppIcon.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -266,6 +268,7 @@
 			children = (
 				4977173C1F13356B00831B35 /* Valentine */,
 				4977173B1F13355E00831B35 /* Christmas */,
+				49A95B5F1F13F15100AEE2F5 /* AppIcon.swift */,
 			);
 			name = "Alternate Icons";
 			sourceTree = "<group>";
@@ -364,6 +367,7 @@
 			files = (
 				0430DE6D1E69F8920010C348 /* GameScene.swift in Sources */,
 				0430DE9D1E69FBD70010C348 /* CGPoint+Extensions.swift in Sources */,
+				49A95B601F13F15100AEE2F5 /* AppIcon.swift in Sources */,
 				0430DEA61E69FBD70010C348 /* SKTTimingFunctions.swift in Sources */,
 				0430DEA51E69FBD70010C348 /* SKTEffects.swift in Sources */,
 				0430DEC11E6C68890010C348 /* MainMenuState.swift in Sources */,

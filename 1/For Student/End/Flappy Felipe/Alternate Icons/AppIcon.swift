@@ -20,15 +20,50 @@
  * THE SOFTWARE.
  */
 
-import SpriteKit
+import UIKit
 
-final class Hat: SKSpriteNode {
-  convenience init() {
-    self.init(imageNamed: "Sombrero")
-    isUserInteractionEnabled = true
+enum AppIcon {
+  case primary
+  case valentine
+  case christmas
+  
+  static var current: AppIcon {
+    return [
+      primary,
+      valentine,
+      christmas
+    ].first{$0.name == UIApplication.shared.alternateIconName}!
   }
-
-  override func touchesBegan(_: Set<UITouch>, with _: UIEvent?) {
+  
+  static func alternate() {
+    let icon: AppIcon
     
+    if current == valentine {
+      icon = primary
+    }
+    else {
+      icon = valentine
+    }
+    
+    UIApplication.shared.setAlternateIconName(icon.name)
+  }
+  
+  var name: String? {
+    switch self {
+    case .primary: return nil
+    case .valentine: return "Valentine"
+    case .christmas: return "Christmas"
+    }
   }
 }
+
+
+
+
+
+
+
+
+
+
+

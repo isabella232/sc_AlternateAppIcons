@@ -44,7 +44,6 @@
 		0430DEC31E6C689B0010C348 /* TutorialState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0430DEC21E6C689B0010C348 /* TutorialState.swift */; };
 		0430DEC71E6CB7490010C348 /* AnimationComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0430DEC61E6CB7490010C348 /* AnimationComponent.swift */; };
 		496E6E3F1ED62D1700BFB799 /* Hat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496E6E3E1ED62D1700BFB799 /* Hat.swift */; };
-		49B8BFB51ED6671000C77502 /* Icon - Pink Sombrero.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B8BFB41ED6671000C77502 /* Icon - Pink Sombrero.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,7 +86,6 @@
 		0430DEC21E6C689B0010C348 /* TutorialState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialState.swift; sourceTree = "<group>"; };
 		0430DEC61E6CB7490010C348 /* AnimationComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationComponent.swift; sourceTree = "<group>"; };
 		496E6E3E1ED62D1700BFB799 /* Hat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hat.swift; sourceTree = "<group>"; };
-		49B8BFB41ED6671000C77502 /* Icon - Pink Sombrero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon - Pink Sombrero.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,7 +220,6 @@
 		49B8BFB11ED6338F00C77502 /* Alternate Icons */ = {
 			isa = PBXGroup;
 			children = (
-				49B8BFB41ED6671000C77502 /* Icon - Pink Sombrero.png */,
 			);
 			name = "Alternate Icons";
 			sourceTree = "<group>";
@@ -296,7 +293,6 @@
 				0430DEAD1E69FBD70010C348 /* pop.wav in Resources */,
 				0430DE991E69FBD70010C348 /* sprites.atlas in Resources */,
 				0430DEA91E69FBD70010C348 /* ding.wav in Resources */,
-				49B8BFB51ED6671000C77502 /* Icon - Pink Sombrero.png in Resources */,
 				0430DEAB1E69FBD70010C348 /* flapping.wav in Resources */,
 				0430DE771E69F8920010C348 /* LaunchScreen.storyboard in Resources */,
 				0430DEAA1E69FBD70010C348 /* falling.wav in Resources */,

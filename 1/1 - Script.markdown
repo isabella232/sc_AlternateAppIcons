@@ -24,6 +24,9 @@ Where's that set up?
 In an asset catalog.
 Very unfortunately, you can't use asset catalogs for icons.
 
+also notice that none of this will work if you use folders to organize the project.
+
+
 ## Interlude
 "Let's work with it in code."
 

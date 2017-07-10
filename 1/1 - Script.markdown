@@ -110,10 +110,6 @@ With that done, it's easy to replace the icon numbers in each array to add the c
 
 That's all you need to do in the p-list! Now the system will be aware that your project contains alternate icons, but we still have to build some kind of representaton of this in our code in order to set the icon to an alternate.
 
-## Interlude
-"Let's work with it in code."
-
-## Demo
 **Catie**  
 Modeling AppIcon as an enumeration will work out fine for encapsulating what we want to explore with the alternate icons API. I'll start with two cases to represent the primary and valentine icons.
 > Create `AppIcon.swift`
@@ -174,13 +170,17 @@ Finally, for this file, let's write a static method to alternate the icons.
 ```
 
 **Catie**  
-To start off with, I'll just switch between two icons. If the current icon is the primary one, I'll choose the Valentine icon. And vice versa.
+To start off with, I'll just switch between two icons. If the current icon is the Valentine one, I'll choose the primary icon. Otherwise, I'll choose the Valentine icon.
 
 ```swift
- let icon =
-      current == primary
-      ? valentine
-      : primary    
+let icon: AppIcon
+    
+if current == valentine {
+  icon = primary
+}
+else {
+  icon = valentine
+}    
 ```
 
 Then, I can use the other half of the `AlternateIconName` API, to `set` the current icon, by name, utilizing what I put in `Info.plist`.

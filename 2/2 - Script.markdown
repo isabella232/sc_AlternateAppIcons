@@ -280,8 +280,18 @@ And now, let's see what we've cooked up for Thanksgiving!
 
 **Jessy**  
 Pumpkin Pie!
+> command-2 (just demo) each time
 
 Now I'll set the date to Christmas…
+> do that.  
+> tap hat.
+
+And it's Santa Felipe!
+
+**Catie**  
+> tap hat and undo and show home screen
+
+And with another tap, the app's back to normal!
 
 The second when you spell something wrong.
 

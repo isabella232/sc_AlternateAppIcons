@@ -306,5 +306,18 @@ Changing the name for the Christmas app icon will cause the `alternate` method t
 
 **Jessy**  
 There's no documentation for why `setAlternateIconName` might throw an error, other than due to _programmer_ error, so fatal error might actually be a reasonable option, depending on the test coverage of your app. Coming up with a way to keep your Info.plist and Swift code in-sync, is up to you.
- 
-experiment because this is brand and we don't actually know what all Apple will allow yet! 
+
+**Catie**    
+This is just one idea of how you might use alternate icons to add some fun engagement to your app. It's important to note that Apple's documentation states that app icons should only be changed at the user's request. This functionality is brand new, so we don't yet have a clear picture of what will pass app review!
+
+**Jessy**  
+It's a great time to experiment! A great use case that has already made it into the app store is theme personalization. If you're a sportsball fan, there are some sportsball-related apps available that let you change the icon to represent your favorite team.
+
+**Catie**  
+Personally, I prefer fancy hat easter eggs.
+
+**Jessy**  
+That's all we've got for this screencast! 
+
+**Catie**  
+See ya!

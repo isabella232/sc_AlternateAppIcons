@@ -44,7 +44,7 @@ private extension AppIcon {
 
 ## Introduction
 **Jessy**  
-Hello! It's screencast time! I'm Jessy; she's Catie!
+Hello! I'm Jessy, she's Catie, and it's time for another screencast!
 
 **Catie**  
 Following from our last screencast, where we went over how to set up alternate app icons for runtime use, in iOS 10.3, we're going to explore a potential application of those alternate icons. We'll also be demonstrating a way to deal with related errors.
@@ -53,8 +53,9 @@ Following from our last screencast, where we went over how to set up alternate a
 You've always been able to push out updates to your app, in order to theme the home screen icon for different seasons. But it's never before been possible to allow the user to decide whether to use that theming. Due to the necessity of app review, it's also never been reliably practical to allow theming to occur for a single day.
 
 **Catie**  
-Now, we can do both of those things! Let's try them out by theming an app, including its icon, for holidays. 
+Now, we can do both of those things! We'll update the raywenderlich.com classic, Flappy Felipe, to let players change the game's theme and icon, but only on Felipe's favorite holidays. 
 
+Thanks very much to Tammy Coron, who last updated the course in which you can learn how to make this game. We'd also like to thank Mike Berg at weHeartGames.com who created all of the original artwork for the game. And, of course, thanks to the real Felipe, Felipe Laso-Marsetti.
 
 ## Demo
 ### *`AppIcon.swift`*

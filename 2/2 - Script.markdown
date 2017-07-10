@@ -132,14 +132,15 @@ I'll define the error case as `AlternateError.noHolidayToday`…
 
 > option-click the name to show that worked
 
-… and throw it when the current app icon is the primary one, and today is not a holiday.
+… and throw it when the current app icon is the primary one, and today is not a holiday. While I'm here, I'll also account for switching previous holiday icons to whatever the icon should be, today. 
 
 ```swift
-    guard let icon =
-      current == primary
-      ? todaysAlternate
-      : primary
-    else {throw AlternateError.noAlternateToday}
+	else{
+      😺switch (current, todaysHolidayIcon) {
+      case (primary, nil): throw AlternateError.noHolidayToday
+      😺case (_, let todaysHolidayIcon?):🏁 icon = todaysHolidayIcon
+      case (_, nil): icon = primary
+      }
 ```
 **Jessy**  
 We also _should_ be dealing with the asynchronous error that `setAlternateIconName` might throw, in its "completion handler".

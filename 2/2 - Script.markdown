@@ -55,6 +55,7 @@ You've always been able to push out updates to your app, in order to theme the h
 **Catie**  
 Now, we can do both of those things! We'll update the raywenderlich.com classic, Flappy Felipe, to let players change the game's theme and icon, but only on Felipe's favorite holidays. 
 
+**Jessy** 
 Thanks very much to Tammy Coron, who last updated the course in which you can learn how to make this game. We'd also like to thank Mike Berg at weHeartGames.com who created all of the original artwork for the game. And, of course, thanks to the real Felipe, Felipe Laso-Marsetti.
 
 ## Demo
@@ -149,6 +150,7 @@ We also _should_ be dealing with the asynchronous error that `setAlternateIconNa
 > option click `setAlternateIconName`
 
 ## Interlude
+**Jessy**  
 Another piece of information that that we need asynchronously, to theme other parts of the app, is what icon the app was switched to in the case where _no_ error occurs when using `setAlternateIconName`.
 
 **Catie**  

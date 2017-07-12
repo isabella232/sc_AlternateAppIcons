@@ -29,9 +29,22 @@ final class Hat: SKSpriteNode {
   }
 
   override func touchesBegan(_: Set<UITouch>, with _: UIEvent?) {
-    AppIcon.alternate()
+    
   }
 }
+
+private extension AppIcon {
+  var textureName: String {
+    if let name = name {
+      return name + " Hat"
+    }
+    else {
+      return "Sombrero"
+    }
+  }
+}
+
+
 
 
 

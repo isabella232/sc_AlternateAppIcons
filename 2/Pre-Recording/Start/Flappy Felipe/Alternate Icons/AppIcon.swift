@@ -25,12 +25,14 @@ import UIKit
 enum AppIcon {
   case primary
   case valentine
+  case thanksgiving
   case christmas
   
   static var current: AppIcon {
     return [
       primary,
       valentine,
+      thanksgiving,
       christmas
     ].first{$0.name == UIApplication.shared.alternateIconName}!
   }
@@ -52,6 +54,7 @@ enum AppIcon {
     switch self {
     case .primary: return nil
     case .valentine: return "Valentine"
+    case .thanksgiving: return "Thanksgiving"
     case .christmas: return "Christmas"
     }
   }

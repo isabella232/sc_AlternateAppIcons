@@ -6,40 +6,55 @@
 	<dict>
 		<key>CFBundleAlternateIcons</key>
 		<dict>
-			<key>Christmas</key>
-			<dict>
-				<key>CFBundleIconFiles</key>
-				<array>
-					<string>ChristmasIcon-60</string>
-				</array>
-			</dict>
-			<key>Valentine</key>
-			<dict>
-				<key>CFBundleIconFiles</key>
-				<array>
-					<string>ValentineIcon-60</string>
-				</array>
-			</dict>
-		</dict>
+      <key>Valentine</key>
+      <dict>
+        <key>CFBundleIconFiles</key>
+        <array>
+          <string>ValentineIcon-60</string>
+        </array>
+      </dict>
+      <key>Thanksgiving</key>
+      <dict>
+        <key>CFBundleIconFiles</key>
+        <array>
+          <string>ThanksgivingIcon-60</string>
+        </array>
+      </dict>
+      <key>Christmas</key>
+      <dict>
+        <key>CFBundleIconFiles</key>
+        <array>
+          <string>ChristmasIcon-60</string>
+        </array>
+      </dict>
+    </dict>
 	</dict>
   <key>CFBundleIcons~ipad</key>
   <dict>
     <key>CFBundleAlternateIcons</key>
     <dict>
-      <key>Christmas</key>
-      <dict>
-        <key>CFBundleIconFiles</key>
-        <array>
-          <string>ChristmasIcon-76</string>
-          <string>ChristmasIcon-83.5</string>
-        </array>
-      </dict>
       <key>Valentine</key>
       <dict>
         <key>CFBundleIconFiles</key>
         <array>
           <string>ValentineIcon-76</string>
           <string>ValentineIcon-83.5</string>
+        </array>
+      </dict>
+      <key>Thanksgiving</key>
+      <dict>
+        <key>CFBundleIconFiles</key>
+        <array>
+          <string>ThanksgivingIcon-76</string>
+          <string>ThanksgivingIcon-83.5</string>
+        </array>
+      </dict>
+      <key>Christmas</key>
+      <dict>
+        <key>CFBundleIconFiles</key>
+        <array>
+          <string>ChristmasIcon-76</string>
+          <string>ChristmasIcon-83.5</string>
         </array>
       </dict>
     </dict>

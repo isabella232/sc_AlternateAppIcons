@@ -21,10 +21,8 @@ private extension AppIcon {
 ```swift
   case primary
   case valentine
+  case thanksgiving
   case christmas
-  
-  
-	case thanksgiving
 ```
 
 ```swift

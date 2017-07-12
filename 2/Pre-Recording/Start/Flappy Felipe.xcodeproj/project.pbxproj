@@ -44,8 +44,17 @@
 		0430DEC31E6C689B0010C348 /* TutorialState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0430DEC21E6C689B0010C348 /* TutorialState.swift */; };
 		0430DEC71E6CB7490010C348 /* AnimationComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0430DEC61E6CB7490010C348 /* AnimationComponent.swift */; };
 		496E6E3F1ED62D1700BFB799 /* Hat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496E6E3E1ED62D1700BFB799 /* Hat.swift */; };
-		49B8BFB31ED633B700C77502 /* AppIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8BFB21ED633B700C77502 /* AppIcon.swift */; };
-		49B8BFB51ED6671000C77502 /* Icon - Pink Sombrero.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B8BFB41ED6671000C77502 /* Icon - Pink Sombrero.png */; };
+		497717421F1335A600831B35 /* ValentineIcon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4977173D1F1335A600831B35 /* ValentineIcon-60@3x.png */; };
+		497717431F1335A600831B35 /* ValentineIcon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4977173E1F1335A600831B35 /* ValentineIcon-60@2x.png */; };
+		497717441F1335A600831B35 /* ValentineIcon-83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4977173F1F1335A600831B35 /* ValentineIcon-83.5@2x.png */; };
+		497717451F1335A600831B35 /* ValentineIcon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 497717401F1335A600831B35 /* ValentineIcon-76@2x.png */; };
+		497717461F1335A600831B35 /* ValentineIcon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 497717411F1335A600831B35 /* ValentineIcon-76.png */; };
+		4977174C1F1335B900831B35 /* ChristmasIcon-83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 497717471F1335B900831B35 /* ChristmasIcon-83.5@2x.png */; };
+		4977174D1F1335B900831B35 /* ChristmasIcon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 497717481F1335B900831B35 /* ChristmasIcon-60@3x.png */; };
+		4977174E1F1335B900831B35 /* ChristmasIcon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 497717491F1335B900831B35 /* ChristmasIcon-76@2x.png */; };
+		4977174F1F1335B900831B35 /* ChristmasIcon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 4977174A1F1335B900831B35 /* ChristmasIcon-76.png */; };
+		497717501F1335B900831B35 /* ChristmasIcon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4977174B1F1335B900831B35 /* ChristmasIcon-60@2x.png */; };
+		49A95B601F13F15100AEE2F5 /* AppIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A95B5F1F13F15100AEE2F5 /* AppIcon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,8 +97,17 @@
 		0430DEC21E6C689B0010C348 /* TutorialState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialState.swift; sourceTree = "<group>"; };
 		0430DEC61E6CB7490010C348 /* AnimationComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationComponent.swift; sourceTree = "<group>"; };
 		496E6E3E1ED62D1700BFB799 /* Hat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hat.swift; sourceTree = "<group>"; };
-		49B8BFB21ED633B700C77502 /* AppIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppIcon.swift; path = "Alternate Icons/AppIcon.swift"; sourceTree = "<group>"; };
-		49B8BFB41ED6671000C77502 /* Icon - Pink Sombrero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon - Pink Sombrero.png"; sourceTree = "<group>"; };
+		4977173D1F1335A600831B35 /* ValentineIcon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ValentineIcon-60@3x.png"; path = "../../../../2/Pre-Recording/End/Flappy Felipe/ValentineIcon-60@3x.png"; sourceTree = "<group>"; };
+		4977173E1F1335A600831B35 /* ValentineIcon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ValentineIcon-60@2x.png"; path = "../../../../2/Pre-Recording/End/Flappy Felipe/ValentineIcon-60@2x.png"; sourceTree = "<group>"; };
+		4977173F1F1335A600831B35 /* ValentineIcon-83.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ValentineIcon-83.5@2x.png"; path = "../../../../2/Pre-Recording/End/Flappy Felipe/ValentineIcon-83.5@2x.png"; sourceTree = "<group>"; };
+		497717401F1335A600831B35 /* ValentineIcon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ValentineIcon-76@2x.png"; path = "../../../../2/Pre-Recording/End/Flappy Felipe/ValentineIcon-76@2x.png"; sourceTree = "<group>"; };
+		497717411F1335A600831B35 /* ValentineIcon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ValentineIcon-76.png"; path = "../../../../2/Pre-Recording/End/Flappy Felipe/ValentineIcon-76.png"; sourceTree = "<group>"; };
+		497717471F1335B900831B35 /* ChristmasIcon-83.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ChristmasIcon-83.5@2x.png"; path = "../../../../2/Pre-Recording/End/Flappy Felipe/ChristmasIcon-83.5@2x.png"; sourceTree = "<group>"; };
+		497717481F1335B900831B35 /* ChristmasIcon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ChristmasIcon-60@3x.png"; path = "../../../../2/Pre-Recording/End/Flappy Felipe/ChristmasIcon-60@3x.png"; sourceTree = "<group>"; };
+		497717491F1335B900831B35 /* ChristmasIcon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ChristmasIcon-76@2x.png"; path = "../../../../2/Pre-Recording/End/Flappy Felipe/ChristmasIcon-76@2x.png"; sourceTree = "<group>"; };
+		4977174A1F1335B900831B35 /* ChristmasIcon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ChristmasIcon-76.png"; path = "../../../../2/Pre-Recording/End/Flappy Felipe/ChristmasIcon-76.png"; sourceTree = "<group>"; };
+		4977174B1F1335B900831B35 /* ChristmasIcon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ChristmasIcon-60@2x.png"; path = "../../../../2/Pre-Recording/End/Flappy Felipe/ChristmasIcon-60@2x.png"; sourceTree = "<group>"; };
+		49A95B5F1F13F15100AEE2F5 /* AppIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppIcon.swift; path = "Alternate Icons/AppIcon.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,7 +214,7 @@
 				0430DEB11E6A71610010C348 /* PlayerEntity.swift */,
 				0430DEB71E6B00BB0010C348 /* ObstacleEntity.swift */,
 			);
-			name = Entities;
+			path = Entities;
 			sourceTree = "<group>";
 		};
 		0430DEB01E6A712B0010C348 /* Components */ = {
@@ -206,7 +224,7 @@
 				0430DEB51E6A77350010C348 /* MovementComponent.swift */,
 				0430DEC61E6CB7490010C348 /* AnimationComponent.swift */,
 			);
-			name = Components;
+			path = Components;
 			sourceTree = "<group>";
 		};
 		0430DEB91E6B43A60010C348 /* GameStates */ = {
@@ -218,14 +236,39 @@
 				0430DEC01E6C68890010C348 /* MainMenuState.swift */,
 				0430DEC21E6C689B0010C348 /* TutorialState.swift */,
 			);
-			name = GameStates;
+			path = GameStates;
+			sourceTree = "<group>";
+		};
+		4977173B1F13355E00831B35 /* Christmas */ = {
+			isa = PBXGroup;
+			children = (
+				4977174B1F1335B900831B35 /* ChristmasIcon-60@2x.png */,
+				497717481F1335B900831B35 /* ChristmasIcon-60@3x.png */,
+				4977174A1F1335B900831B35 /* ChristmasIcon-76.png */,
+				497717491F1335B900831B35 /* ChristmasIcon-76@2x.png */,
+				497717471F1335B900831B35 /* ChristmasIcon-83.5@2x.png */,
+			);
+			name = Christmas;
+			sourceTree = "<group>";
+		};
+		4977173C1F13356B00831B35 /* Valentine */ = {
+			isa = PBXGroup;
+			children = (
+				4977173E1F1335A600831B35 /* ValentineIcon-60@2x.png */,
+				4977173D1F1335A600831B35 /* ValentineIcon-60@3x.png */,
+				497717411F1335A600831B35 /* ValentineIcon-76.png */,
+				497717401F1335A600831B35 /* ValentineIcon-76@2x.png */,
+				4977173F1F1335A600831B35 /* ValentineIcon-83.5@2x.png */,
+			);
+			name = Valentine;
 			sourceTree = "<group>";
 		};
 		49B8BFB11ED6338F00C77502 /* Alternate Icons */ = {
 			isa = PBXGroup;
 			children = (
-				49B8BFB21ED633B700C77502 /* AppIcon.swift */,
-				49B8BFB41ED6671000C77502 /* Icon - Pink Sombrero.png */,
+				4977173C1F13356B00831B35 /* Valentine */,
+				4977173B1F13355E00831B35 /* Christmas */,
+				49A95B5F1F13F15100AEE2F5 /* AppIcon.swift */,
 			);
 			name = "Alternate Icons";
 			sourceTree = "<group>";
@@ -291,18 +334,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				497717461F1335A600831B35 /* ValentineIcon-76.png in Resources */,
+				4977174E1F1335B900831B35 /* ChristmasIcon-76@2x.png in Resources */,
 				0430DEAE1E69FBD70010C348 /* whack.wav in Resources */,
+				497717451F1335A600831B35 /* ValentineIcon-76@2x.png in Resources */,
+				4977174F1F1335B900831B35 /* ChristmasIcon-76.png in Resources */,
 				0430DEA81E69FBD70010C348 /* coin.wav in Resources */,
 				0430DE721E69F8920010C348 /* Main.storyboard in Resources */,
+				4977174D1F1335B900831B35 /* ChristmasIcon-60@3x.png in Resources */,
 				0430DE741E69F8920010C348 /* Assets.xcassets in Resources */,
+				4977174C1F1335B900831B35 /* ChristmasIcon-83.5@2x.png in Resources */,
 				0430DEAC1E69FBD70010C348 /* hitGround.wav in Resources */,
 				0430DEAD1E69FBD70010C348 /* pop.wav in Resources */,
+				497717441F1335A600831B35 /* ValentineIcon-83.5@2x.png in Resources */,
 				0430DE991E69FBD70010C348 /* sprites.atlas in Resources */,
+				497717421F1335A600831B35 /* ValentineIcon-60@3x.png in Resources */,
 				0430DEA91E69FBD70010C348 /* ding.wav in Resources */,
-				49B8BFB51ED6671000C77502 /* Icon - Pink Sombrero.png in Resources */,
 				0430DEAB1E69FBD70010C348 /* flapping.wav in Resources */,
 				0430DE771E69F8920010C348 /* LaunchScreen.storyboard in Resources */,
+				497717501F1335B900831B35 /* ChristmasIcon-60@2x.png in Resources */,
 				0430DEAA1E69FBD70010C348 /* falling.wav in Resources */,
+				497717431F1335A600831B35 /* ValentineIcon-60@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,10 +367,10 @@
 			files = (
 				0430DE6D1E69F8920010C348 /* GameScene.swift in Sources */,
 				0430DE9D1E69FBD70010C348 /* CGPoint+Extensions.swift in Sources */,
+				49A95B601F13F15100AEE2F5 /* AppIcon.swift in Sources */,
 				0430DEA61E69FBD70010C348 /* SKTTimingFunctions.swift in Sources */,
 				0430DEA51E69FBD70010C348 /* SKTEffects.swift in Sources */,
 				0430DEC11E6C68890010C348 /* MainMenuState.swift in Sources */,
-				49B8BFB31ED633B700C77502 /* AppIcon.swift in Sources */,
 				0430DEA11E69FBD70010C348 /* SKAction+SpecialEffects.swift in Sources */,
 				0430DEC71E6CB7490010C348 /* AnimationComponent.swift in Sources */,
 				0430DE9E1E69FBD70010C348 /* CGVector+Extensions.swift in Sources */,

@@ -96,8 +96,8 @@ enum AppIcon {
     switch self {
     case .primary: return nil
     case .valentine: return "Valentine"
+    case .christmas: return "Christmas"
     case .thanksgiving: return "Thanksgiving"
-    case .christmas: return "🎅🎄🤶"
     }
   }
 }
